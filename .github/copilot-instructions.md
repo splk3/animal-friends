@@ -58,7 +58,9 @@ src/
 - Use `max-w-4xl mx-auto` for main content containers
 - Apply consistent spacing: `mb-8` between major sections, `mb-6` within sections
 - Grid layouts: `grid md:grid-cols-2 gap-8` for two-column layouts
-- Buttons/Links: Use gradient backgrounds (`bg-gradient-to-r from-pink-400 to-pink-500`)
+- Buttons/Links: Use gradient backgrounds alternating between pink and purple:
+  - Pink: `bg-gradient-to-r from-pink-400 to-pink-500`
+  - Purple: `bg-gradient-to-r from-purple-400 to-purple-500`
 
 ### Navigation
 - Main navigation includes Home, Real Pets dropdown, and Mythical Pets dropdown
