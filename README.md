@@ -1,6 +1,6 @@
 # Animal Friends 🐾
 
-A fun and colorful website about animals that make good pets, featuring both real-world companions and mythical creatures! Built with Gatsby 5.x and Tailwind CSS 3.x.
+A fun and colorful website about animals that make good pets, featuring real-world companions, mythical creatures, and magical mixed pets! Built with Gatsby 5.x and Tailwind CSS 3.x.
 
 ## 🌟 Features
 
@@ -8,8 +8,9 @@ A fun and colorful website about animals that make good pets, featuring both rea
 - **Type-Safe Development**: Full TypeScript support for components and configuration
 - **Beautiful Design**: Light pink and purple color palette with Tailwind CSS 3.x
 - **Comprehensive Content**: 
-  - Real pets: Dogs, Cats, Birds, Fish
-  - Mythical creatures: Dragons, Unicorns, Phoenixes
+  - Real pets: Dogs, Cats, Birds, Fish, and more
+  - Mythical creatures: Dragons, Unicorns, Phoenixes, and more
+  - Mixed pets: Magical hybrids like MerPup and KittyCorn
 - **GitHub Pages Ready**: Automated deployment workflow included
 - **Fully Static**: No server-side rendering, perfect for hosting on GitHub Pages
 
@@ -74,7 +75,9 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 │   │   ├── fish.tsx            # Fish page
 │   │   ├── dragons.tsx         # Dragons page
 │   │   ├── unicorns.tsx        # Unicorns page
-│   │   └── phoenixes.tsx       # Phoenixes page
+│   │   ├── phoenixes.tsx       # Phoenixes page
+│   │   ├── merpup.tsx          # MerPup page (mixed pet)
+│   │   └── kittycorn.tsx       # KittyCorn page (mixed pet)
 │   └── styles/
 │       └── global.css          # Global styles with Tailwind imports
 ├── gatsby-config.ts            # Gatsby configuration (TypeScript)
