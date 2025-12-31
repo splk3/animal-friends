@@ -110,7 +110,6 @@ src/
 - Ensure all pages are accessible from navigation
 - Use emojis to add personality and visual interest
 - Test builds before deploying (`npm run build`)
-- Always run `npm install` after pulling changes that modify package.json
 
 ## Security Guidelines
 - Never commit secrets, API keys, or credentials to the repository
