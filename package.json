@@ -1,7 +1,7 @@
 {
   "name": "animal-friends",
   "version": "1.0.0",
-  "description": "Website about animals that good pets",
+  "description": "Website about animals that are good pets",
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
