@@ -24,10 +24,16 @@ src/
 ```
 
 ## Development Commands
-- `npm run develop` - Start development server at http://localhost:8000
+
+### Prerequisites
+- Node.js 18+ must be installed
+- Run `npm install` before first use or after dependency changes
+
+### Available Scripts
+- `npm run develop` (or `npm start`) - Start development server at http://localhost:8000
 - `npm run build` - Build static site for production
-- `npm run serve` - Serve production build locally
-- `npm run clean` - Clean Gatsby cache
+- `npm run serve` - Serve production build locally at http://localhost:9000
+- `npm run clean` - Clean Gatsby cache and public directory
 
 ## Coding Conventions
 
@@ -104,3 +110,18 @@ src/
 - Ensure all pages are accessible from navigation
 - Use emojis to add personality and visual interest
 - Test builds before deploying (`npm run build`)
+- Always run `npm install` after pulling changes that modify package.json
+
+## Security Guidelines
+- Never commit secrets, API keys, or credentials to the repository
+- Do not commit build artifacts (public/, .cache/) - these are in .gitignore
+- Do not commit node_modules/ directory - it's in .gitignore
+- Review all changes before committing to ensure no sensitive data is included
+
+## Development Workflow
+1. Run `npm install` to install dependencies (first time or after package.json changes)
+2. Use `npm run develop` to start the development server
+3. Make changes and test locally in the browser at http://localhost:8000
+4. Run `npm run build` to verify the production build works
+5. Commit changes with descriptive commit messages
+6. Build artifacts and dependencies are automatically excluded via .gitignore
