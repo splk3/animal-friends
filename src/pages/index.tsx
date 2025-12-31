@@ -1,8 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, type HeadFC } from "gatsby"
 import Layout from "../components/Layout"
 
-const IndexPage = () => {
+const IndexPage: React.FC = () => {
   return (
     <Layout pageTitle="Welcome to Animal Friends!">
       <div className="max-w-4xl mx-auto">
@@ -114,4 +114,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home - Animal Friends</title>
+export const Head: HeadFC = () => <title>Home - Animal Friends</title>

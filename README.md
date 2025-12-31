@@ -4,7 +4,8 @@ A fun and colorful website about animals that make good pets, featuring both rea
 
 ## 🌟 Features
 
-- **Modern Tech Stack**: Gatsby 5.x static site generator with React 18.3
+- **Modern Tech Stack**: Gatsby 5.x static site generator with React 18.3 and TypeScript
+- **Type-Safe Development**: Full TypeScript support for components and configuration
 - **Beautiful Design**: Light pink and purple color palette with Tailwind CSS 3.x
 - **Comprehensive Content**: 
   - Real pets: Dogs, Cats, Birds, Fish
@@ -64,29 +65,31 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 ```
 ├── src/
 │   ├── components/
-│   │   └── Layout.js          # Main layout component with navigation
+│   │   └── Layout.tsx          # Main layout component with navigation
 │   ├── pages/
-│   │   ├── index.js           # Homepage
-│   │   ├── dogs.js            # Dogs page
-│   │   ├── cats.js            # Cats page
-│   │   ├── birds.js           # Birds page
-│   │   ├── fish.js            # Fish page
-│   │   ├── dragons.js         # Dragons page
-│   │   ├── unicorns.js        # Unicorns page
-│   │   └── phoenixes.js       # Phoenixes page
+│   │   ├── index.tsx           # Homepage
+│   │   ├── dogs.tsx            # Dogs page
+│   │   ├── cats.tsx            # Cats page
+│   │   ├── birds.tsx           # Birds page
+│   │   ├── fish.tsx            # Fish page
+│   │   ├── dragons.tsx         # Dragons page
+│   │   ├── unicorns.tsx        # Unicorns page
+│   │   └── phoenixes.tsx       # Phoenixes page
 │   └── styles/
-│       └── global.css         # Global styles with Tailwind imports
-├── gatsby-config.js           # Gatsby configuration
-├── tailwind.config.js         # Tailwind CSS configuration
+│       └── global.css          # Global styles with Tailwind imports
+├── gatsby-config.ts            # Gatsby configuration (TypeScript)
+├── tsconfig.json               # TypeScript configuration
+├── tailwind.config.js          # Tailwind CSS configuration
 └── .github/
     └── workflows/
-        └── deploy.yml         # GitHub Pages deployment workflow
+        └── deploy.yml          # GitHub Pages deployment workflow
 ```
 
 ## 🛠️ Technologies Used
 
 - [Gatsby 5.x](https://www.gatsbyjs.com/) - Static site generator
 - [React 18.3](https://react.dev/) - UI library
+- [TypeScript 5.7](https://www.typescriptlang.org/) - Type-safe JavaScript
 - [Tailwind CSS 3.x](https://tailwindcss.com/) - Utility-first CSS framework
 - [PostCSS](https://postcss.org/) - CSS processor
 - [Autoprefixer](https://github.com/postcss/autoprefixer) - CSS vendor prefixing

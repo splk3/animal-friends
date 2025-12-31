@@ -2,7 +2,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import "../styles/global.css"
 
-const Layout = ({ children, pageTitle }) => {
+interface LayoutProps {
+  children: React.ReactNode
+  pageTitle?: string
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
   return (
     <div className="min-h-screen">
       <nav className="bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg">

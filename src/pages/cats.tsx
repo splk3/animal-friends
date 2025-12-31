@@ -1,7 +1,8 @@
 import * as React from "react"
+import { type HeadFC } from "gatsby"
 import Layout from "../components/Layout"
 
-const CatsPage = () => {
+const CatsPage: React.FC = () => {
   return (
     <Layout pageTitle="🐈 Cats - Independent Companions">
       <div className="max-w-4xl mx-auto">
@@ -100,4 +101,4 @@ const CatsPage = () => {
 
 export default CatsPage
 
-export const Head = () => <title>Cats - Animal Friends</title>
+export const Head: HeadFC = () => <title>Cats - Animal Friends</title>

@@ -1,7 +1,6 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+
+const config: GatsbyConfig = {
   pathPrefix: "/animal-friends",
   siteMetadata: {
     title: "Animal Friends - Your Guide to Perfect Pets",
@@ -16,3 +15,5 @@ module.exports = {
     DEV_SSR: false,
   },
 }
+
+export default config
