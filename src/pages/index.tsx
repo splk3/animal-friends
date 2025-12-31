@@ -46,6 +46,42 @@ const IndexPage: React.FC = () => {
               >
                 🐠 Fish
               </Link>
+              <Link 
+                to="/hamster" 
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-pink-600 transition font-semibold"
+              >
+                🐹 Hamsters
+              </Link>
+              <Link 
+                to="/lizard" 
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold"
+              >
+                🦎 Lizards
+              </Link>
+              <Link 
+                to="/seal" 
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-pink-600 transition font-semibold"
+              >
+                🦭 Seals
+              </Link>
+              <Link 
+                to="/sea-otter" 
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold"
+              >
+                🦦 Sea Otters
+              </Link>
+              <Link 
+                to="/turtle" 
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-pink-600 transition font-semibold"
+              >
+                🐢 Turtles
+              </Link>
+              <Link 
+                to="/pig" 
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold"
+              >
+                🐷 Pigs
+              </Link>
             </div>
           </div>
 
@@ -71,9 +107,21 @@ const IndexPage: React.FC = () => {
               </Link>
               <Link 
                 to="/phoenixes" 
-                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold col-span-2"
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold"
               >
                 🔥 Phoenixes
+              </Link>
+              <Link 
+                to="/triceratops" 
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-pink-600 transition font-semibold"
+              >
+                🦕 Triceratops
+              </Link>
+              <Link 
+                to="/velociraptor" 
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold col-span-2"
+              >
+                🦖 Velociraptor
               </Link>
             </div>
           </div>

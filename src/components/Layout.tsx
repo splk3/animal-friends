@@ -37,6 +37,24 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   <Link to="/fish" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
                     Fish
                   </Link>
+                  <Link to="/hamster" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Hamsters
+                  </Link>
+                  <Link to="/lizard" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Lizards
+                  </Link>
+                  <Link to="/seal" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Seals
+                  </Link>
+                  <Link to="/sea-otter" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Sea Otters
+                  </Link>
+                  <Link to="/turtle" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Turtles
+                  </Link>
+                  <Link to="/pig" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Pigs
+                  </Link>
                 </div>
               </div>
               <div className="relative group">
@@ -52,6 +70,12 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   </Link>
                   <Link to="/phoenixes" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
                     Phoenixes
+                  </Link>
+                  <Link to="/triceratops" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Triceratops
+                  </Link>
+                  <Link to="/velociraptor" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Velociraptor
                   </Link>
                 </div>
               </div>
