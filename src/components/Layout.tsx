@@ -10,7 +10,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
   return (
-    <div className="min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-purple-900 dark:to-gray-900">
+    <div className="min-h-screen">
       <nav className="bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg dark:from-purple-700 dark:to-pink-700">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
