@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "../styles/global.css"
+import DarkModeToggle from "./DarkModeToggle"
 
 interface LayoutProps {
   children: React.ReactNode
@@ -9,14 +10,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
   return (
-    <div className="min-h-screen">
-      <nav className="bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg">
+    <div className="min-h-screen dark:bg-gradient-to-br dark:from-gray-900 dark:via-purple-900 dark:to-gray-900">
+      <nav className="bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg dark:from-purple-700 dark:to-pink-700">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-white text-2xl font-bold hover:text-pink-100 transition">
               🐾 Animal Friends
             </Link>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               <Link to="/" className="text-white hover:text-pink-100 transition px-3 py-2 rounded">
                 Home
               </Link>
@@ -159,21 +160,22 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   </Link>
                 </div>
               </div>
+              <DarkModeToggle />
             </div>
           </div>
         </div>
       </nav>
       
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 dark:text-gray-100">
         {pageTitle && (
-          <h1 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
+          <h1 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 dark:from-pink-400 dark:to-purple-400">
             {pageTitle}
           </h1>
         )}
         {children}
       </main>
       
-      <footer className="bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-12">
+      <footer className="bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-12 dark:from-purple-800 dark:to-pink-800">
         <div className="container mx-auto px-4 py-6 text-center">
           <p className="text-sm">
             🐾 Animal Friends © {new Date().getFullYear()} - Discover Your Perfect Pet Companion
