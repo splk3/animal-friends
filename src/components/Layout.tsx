@@ -449,7 +449,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   <span className={`transform transition-transform ${openDropdown === 'mythical' ? 'rotate-180' : ''}`}>▾</span>
                 </button>
                 {openDropdown === 'mythical' && (
-                  <div className="bg-white/10 rounded-lg mt-1 py-1 ml-4">
+                  <div className="bg-white/10 rounded-lg mt-1 py-1 ml-4 max-h-60 overflow-y-auto">
                     <Link to="/dragons" className="block px-4 py-2 text-white hover:bg-white/10" onClick={closeMobileMenu}>
                       Dragons
                     </Link>
@@ -653,7 +653,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   <span className={`transform transition-transform ${openDropdown === 'pokemon' ? 'rotate-180' : ''}`}>▾</span>
                 </button>
                 {openDropdown === 'pokemon' && (
-                  <div className="bg-white/10 rounded-lg mt-1 py-1 ml-4">
+                  <div className="bg-white/10 rounded-lg mt-1 py-1 ml-4 max-h-60 overflow-y-auto">
                     <Link to="/pikachu" className="block px-4 py-2 text-white hover:bg-white/10" onClick={closeMobileMenu}>
                       Pikachu
                     </Link>
