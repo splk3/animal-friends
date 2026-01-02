@@ -1,0 +1,68 @@
+import * as React from "react"
+import { Link } from "gatsby"
+
+interface DropdownLink {
+  to: string
+  label: string
+}
+
+interface MobileDropdownProps {
+  id: string
+  title: string
+  links: DropdownLink[]
+  isOpen: boolean
+  onToggle: () => void
+  onLinkClick: () => void
+}
+
+const MobileDropdown: React.FC<MobileDropdownProps> = ({
+  id,
+  title,
+  links,
+  isOpen,
+  onToggle,
+  onLinkClick,
+}) => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault()
+      onToggle()
+    }
+  }
+
+  return (
+    <div>
+      <button
+        onClick={onToggle}
+        onKeyDown={handleKeyDown}
+        className="w-full text-left text-white hover:bg-white/10 transition px-3 py-2 rounded flex justify-between items-center"
+        aria-expanded={isOpen}
+        aria-controls={`mobile-${id}-menu`}
+      >
+        {title}
+        <span className={`transform transition-transform ${isOpen ? 'rotate-180' : ''}`}>▾</span>
+      </button>
+      {isOpen && (
+        <div
+          id={`mobile-${id}-menu`}
+          className="bg-white/10 rounded-lg mt-1 py-1 ml-4 max-h-60 overflow-y-auto"
+          role="menu"
+        >
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="block px-4 py-2 text-white hover:bg-white/10"
+              onClick={onLinkClick}
+              role="menuitem"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default MobileDropdown
