@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const RainbowBunnyPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐰 Rainbow Bunny - Colorful Bunnys">
+    <Layout pageTitle="🌈🐰 Rainbow Bunny - Colorful Bunnies">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
@@ -94,7 +94,7 @@ const RainbowBunnyPage: React.FC = () => {
 
         <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
           <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Bunnys create colorful displays wherever they go! 
+            🌈 Fun Fact: Rainbow Bunnies create colorful displays wherever they go! 
             Their presence makes the environment more vibrant and joyful!
           </p>
         </div>
