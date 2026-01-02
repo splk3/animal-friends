@@ -20,8 +20,6 @@ updates:
       production-dependencies:
         patterns:
           - "*"
-        exclude-patterns:
-          - "@types/*"
         update-types:
           - "minor"
           - "patch"
