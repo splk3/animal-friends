@@ -9,8 +9,8 @@ const IndexPage: React.FC = () => {
         <div className="text-center mb-12">
           <p className="text-xl text-purple-700 mb-6">
             Discover the perfect animal companion for your life! Whether you're looking for a 
-            real-world pet, dreaming of mythical creatures, or exploring magical mixed companions, 
-            we've got you covered.
+            real-world pet, dreaming of mythical creatures, exploring magical mixed companions, 
+            or training Pokemon, we've got you covered.
           </p>
         </div>
 
@@ -279,6 +279,37 @@ const IndexPage: React.FC = () => {
                 className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 text-white px-4 py-3 rounded-lg text-center hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 transition font-semibold col-span-2"
               >
                 🌈🐷 Rainbow Pig
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-1 gap-8 mb-12">
+          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-1">
+            <div className="text-6xl text-center mb-4">⚡🎮🦌</div>
+            <h2 className="text-2xl font-bold text-purple-600 text-center mb-4">Pokemon Pets</h2>
+            <p className="text-gray-700 mb-6 text-center">
+              Enter the exciting world of Pokemon! These amazing creatures have unique abilities 
+              and personalities, making them wonderful companions for trainers everywhere.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <Link 
+                to="/pikachu" 
+                className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-4 py-3 rounded-lg text-center hover:from-yellow-500 hover:to-yellow-600 transition font-semibold"
+              >
+                ⚡ Pikachu
+              </Link>
+              <Link 
+                to="/deerling" 
+                className="bg-gradient-to-r from-green-400 to-green-500 text-white px-4 py-3 rounded-lg text-center hover:from-green-500 hover:to-green-600 transition font-semibold"
+              >
+                🦌 Deerling
+              </Link>
+              <Link 
+                to="/azuril" 
+                className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-4 py-3 rounded-lg text-center hover:from-blue-500 hover:to-blue-600 transition font-semibold"
+              >
+                💧 Azuril
               </Link>
             </div>
           </div>
