@@ -51,7 +51,7 @@ const DarkModeToggle: React.FC = () => {
       className="text-white p-2 rounded-lg hover:bg-white/10 transition"
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      <span className="text-xl">{isDark ? '☀️' : '🌙'}</span>
+      <span className="text-xl">{isDark ? '🌙' : '☀️'}</span>
     </button>
   )
 }
