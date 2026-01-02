@@ -69,10 +69,15 @@ src/
   - Purple: `bg-gradient-to-r from-purple-400 to-purple-500`
 
 ### Navigation
-- Main navigation includes Home, Real Pets dropdown, and Mythical Pets dropdown
+- Main navigation includes Home and multiple dropdown menus:
+  - **Real Pets** - Real-world animals (dogs, cats, birds, fish, hamsters, lizards, seals, sea otters, turtles, pigs, cows, ducks, lady bugs, butterflies)
+  - **Mythical Pets** - Fantasy creatures (dragons, unicorns, phoenixes, triceratops, velociraptor)
+  - **Mixed Pets** - Hybrid/magical combinations (merpup, kittycorn, unipup, mercat, rainpup, rainbird, sundog, sunbird, rainduck, sunbug, sunbutterfly)
+  - **Rainbow Pets** - Rainbow-themed variants (rainbow-lizard, rainbow-cat, rainbow-dog, rainbow-bird, rainbow-duck, rainbow-cow, rainbow-pig)
 - Dropdown menus should use: `group` parent with `group-hover:block` children
 - All navigation links should include hover transitions
 - Use emojis in navigation for visual appeal
+- **CRITICAL**: When adding a new page, you MUST add a corresponding link in the appropriate dropdown menu in `Layout.tsx`
 
 ### Content Guidelines
 - Each animal page should include:
@@ -94,22 +99,40 @@ src/
 - No server-side rendering (SSR is disabled for GitHub Pages compatibility)
 
 ## Adding New Pages
-1. Create new file in `src/pages/` with kebab-case naming
-2. Import Layout component and necessary types
+**IMPORTANT**: When adding a new page, you MUST update the navigation menu in `Layout.tsx` - this is not optional!
+
+Follow these steps in order:
+1. Create new file in `src/pages/` with kebab-case naming (e.g., `sea-otter.tsx`)
+2. Import Layout component and necessary types (`import { HeadFC } from "gatsby"`)
 3. Use functional component with React.FC type
 4. Wrap content in Layout with appropriate pageTitle
 5. Export Head component with page title
-6. Add navigation link in `Layout.tsx` under appropriate dropdown menu
-7. Follow existing page structure and styling patterns
+6. **REQUIRED**: Add navigation link in `src/components/Layout.tsx` under the appropriate dropdown menu:
+   - Real Pets dropdown (lines ~28-71) for real-world animals
+   - Mythical Pets dropdown (lines ~77-93) for fantasy creatures
+   - Mixed Pets dropdown (lines ~99-133) for hybrid/magical combinations
+   - Rainbow Pets dropdown (lines ~139-161) for rainbow-themed variants
+7. Follow the existing link pattern: `<Link to="/page-name" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">Display Name</Link>`
+8. Follow existing page structure and styling patterns
+9. Test the navigation menu works by running `npm run develop` and clicking through the menu
+
+**Navigation Update Checklist**:
+- [ ] Navigation link added to `Layout.tsx`
+- [ ] Link uses correct route path matching filename (without .tsx extension)
+- [ ] Link placed in appropriate dropdown menu category
+- [ ] Link follows existing styling pattern
+- [ ] Navigation tested in browser
 
 ## Best Practices
 - Maintain consistent color scheme (pink/purple theme)
 - Use semantic HTML elements within Tailwind classes
 - Keep components simple and focused
 - Follow existing patterns for consistency
-- Ensure all pages are accessible from navigation
+- **ALWAYS update navigation menus when adding new pages** - this is a critical requirement
+- Ensure all pages are accessible from navigation (verify by testing in browser)
 - Use emojis to add personality and visual interest
 - Test builds before deploying (`npm run build`)
+- **Double-check** that new pages appear in the navigation dropdown before considering the task complete
 
 ## Security Guidelines
 - Never commit secrets, API keys, or credentials to the repository
