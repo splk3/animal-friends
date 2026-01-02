@@ -4,12 +4,12 @@ import Layout from "../components/Layout"
 
 const RainbowBilbyPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐭 Rainbow Bilbie - Colorful Bilbies">
+    <Layout pageTitle="🌈🐭 Rainbow Bilby - Colorful Bilbys">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              The Rainbow Bilbie combines the characteristics of bilbys with stunning 
+              The Rainbow Bilby combines the characteristics of bilbies with stunning 
               rainbow-colored patterns. These magnificent creatures display all the colors of the 
               spectrum, bringing joy and wonder wherever they go!
             </p>
@@ -53,7 +53,7 @@ const RainbowBilbyPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Habitat</h3>
                   <p className="text-gray-700">
-                    Needs similar environment to regular bilbys with appropriate space, 
+                    Needs similar environment to regular bilbies with appropriate space, 
                     shelter, and enrichment. Rainbow coloring doesn't change care requirements!
                   </p>
                 </div>
@@ -63,7 +63,7 @@ const RainbowBilbyPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-purple-600">Diet</h3>
                   <p className="text-gray-700">
-                    Same nutritional needs as regular bilbys. Balanced diet maintains 
+                    Same nutritional needs as regular bilbies. Balanced diet maintains 
                     health and vibrant rainbow coloring.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const RainbowBilbyPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Temperament</h3>
                   <p className="text-gray-700">
-                    Same personality as regular bilbys. The rainbow colors just make them 
+                    Same personality as regular bilbies. The rainbow colors just make them 
                     even more special and eye-catching!
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const RainbowBilbyPage: React.FC = () => {
 
         <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
           <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Bilbies create colorful displays wherever they go! 
+            🌈 Fun Fact: Rainbow Bilbys create colorful displays wherever they go! 
             Their presence makes the environment more vibrant and joyful!
           </p>
         </div>
@@ -105,4 +105,4 @@ const RainbowBilbyPage: React.FC = () => {
 
 export default RainbowBilbyPage
 
-export const Head: HeadFC = () => <title>Rainbow Bilbie - Animal Friends</title>
+export const Head: HeadFC = () => <title>Rainbow Bilby - Animal Friends</title>

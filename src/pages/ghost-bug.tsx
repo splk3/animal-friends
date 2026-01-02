@@ -70,7 +70,7 @@ const GhostBugPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xml">✨</span>
+                <span className="text-2xl">✨</span>
                 <div>
                   <h3 className="font-semibold text-pink-600">Behavior</h3>
                   <p className="text-gray-700">

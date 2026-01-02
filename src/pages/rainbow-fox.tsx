@@ -4,12 +4,12 @@ import Layout from "../components/Layout"
 
 const RainbowFoxPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🦊 Rainbow Foxe - Colorful Foxes">
+    <Layout pageTitle="🌈🦊 Rainbow Fox - Colorful Foxes">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              The Rainbow Foxe combines the characteristics of foxs with stunning 
+              The Rainbow Fox combines the characteristics of foxes with stunning 
               rainbow-colored patterns. These magnificent creatures display all the colors of the 
               spectrum, bringing joy and wonder wherever they go!
             </p>
@@ -53,7 +53,7 @@ const RainbowFoxPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Habitat</h3>
                   <p className="text-gray-700">
-                    Needs similar environment to regular foxs with appropriate space, 
+                    Needs similar environment to regular foxes with appropriate space, 
                     shelter, and enrichment. Rainbow coloring doesn't change care requirements!
                   </p>
                 </div>
@@ -63,7 +63,7 @@ const RainbowFoxPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-purple-600">Diet</h3>
                   <p className="text-gray-700">
-                    Same nutritional needs as regular foxs. Balanced diet maintains 
+                    Same nutritional needs as regular foxes. Balanced diet maintains 
                     health and vibrant rainbow coloring.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const RainbowFoxPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Temperament</h3>
                   <p className="text-gray-700">
-                    Same personality as regular foxs. The rainbow colors just make them 
+                    Same personality as regular foxes. The rainbow colors just make them 
                     even more special and eye-catching!
                   </p>
                 </div>
@@ -105,4 +105,4 @@ const RainbowFoxPage: React.FC = () => {
 
 export default RainbowFoxPage
 
-export const Head: HeadFC = () => <title>Rainbow Foxe - Animal Friends</title>
+export const Head: HeadFC = () => <title>Rainbow Fox - Animal Friends</title>

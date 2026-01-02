@@ -9,7 +9,7 @@ const RainbowDeerPage: React.FC = () => {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              The Rainbow Deer combines the characteristics of deers with stunning 
+              The Rainbow Deer combines the characteristics of deer with stunning 
               rainbow-colored patterns. These magnificent creatures display all the colors of the 
               spectrum, bringing joy and wonder wherever they go!
             </p>
@@ -53,7 +53,7 @@ const RainbowDeerPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Habitat</h3>
                   <p className="text-gray-700">
-                    Needs similar environment to regular deers with appropriate space, 
+                    Needs similar environment to regular deer with appropriate space, 
                     shelter, and enrichment. Rainbow coloring doesn't change care requirements!
                   </p>
                 </div>
@@ -63,7 +63,7 @@ const RainbowDeerPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-purple-600">Diet</h3>
                   <p className="text-gray-700">
-                    Same nutritional needs as regular deers. Balanced diet maintains 
+                    Same nutritional needs as regular deer. Balanced diet maintains 
                     health and vibrant rainbow coloring.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const RainbowDeerPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Temperament</h3>
                   <p className="text-gray-700">
-                    Same personality as regular deers. The rainbow colors just make them 
+                    Same personality as regular deer. The rainbow colors just make them 
                     even more special and eye-catching!
                   </p>
                 </div>

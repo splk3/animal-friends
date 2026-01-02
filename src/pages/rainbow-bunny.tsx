@@ -4,12 +4,12 @@ import Layout from "../components/Layout"
 
 const RainbowBunnyPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐰 Rainbow Bunnie - Colorful Bunnies">
+    <Layout pageTitle="🌈🐰 Rainbow Bunny - Colorful Bunnys">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              The Rainbow Bunnie combines the characteristics of bunnys with stunning 
+              The Rainbow Bunny combines the characteristics of bunnies with stunning 
               rainbow-colored patterns. These magnificent creatures display all the colors of the 
               spectrum, bringing joy and wonder wherever they go!
             </p>
@@ -53,7 +53,7 @@ const RainbowBunnyPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Habitat</h3>
                   <p className="text-gray-700">
-                    Needs similar environment to regular bunnys with appropriate space, 
+                    Needs similar environment to regular bunnies with appropriate space, 
                     shelter, and enrichment. Rainbow coloring doesn't change care requirements!
                   </p>
                 </div>
@@ -63,7 +63,7 @@ const RainbowBunnyPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-purple-600">Diet</h3>
                   <p className="text-gray-700">
-                    Same nutritional needs as regular bunnys. Balanced diet maintains 
+                    Same nutritional needs as regular bunnies. Balanced diet maintains 
                     health and vibrant rainbow coloring.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const RainbowBunnyPage: React.FC = () => {
                 <div>
                   <h3 className="font-semibold text-pink-600">Temperament</h3>
                   <p className="text-gray-700">
-                    Same personality as regular bunnys. The rainbow colors just make them 
+                    Same personality as regular bunnies. The rainbow colors just make them 
                     even more special and eye-catching!
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const RainbowBunnyPage: React.FC = () => {
 
         <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
           <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Bunnies create colorful displays wherever they go! 
+            🌈 Fun Fact: Rainbow Bunnys create colorful displays wherever they go! 
             Their presence makes the environment more vibrant and joyful!
           </p>
         </div>
@@ -105,4 +105,4 @@ const RainbowBunnyPage: React.FC = () => {
 
 export default RainbowBunnyPage
 
-export const Head: HeadFC = () => <title>Rainbow Bunnie - Animal Friends</title>
+export const Head: HeadFC = () => <title>Rainbow Bunny - Animal Friends</title>

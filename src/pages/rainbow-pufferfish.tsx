@@ -79,7 +79,7 @@ const RainbowPufferfishPage: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-starts gap-3">
+              <div className="flex items-start gap-3">
                 <span className="text-2xl">😊</span>
                 <div>
                   <h3 className="font-semibold text-purple-600">Personality</h3>
