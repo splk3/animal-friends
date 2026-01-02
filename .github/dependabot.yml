@@ -18,6 +18,7 @@ updates:
     groups:
       # Group all production dependency updates together
       production-dependencies:
+        dependency-type: "production"
         patterns:
           - "*"
         exclude-patterns:
