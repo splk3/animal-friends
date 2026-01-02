@@ -2,25 +2,25 @@ import * as React from "react"
 import { type HeadFC } from "gatsby"
 import Layout from "../components/Layout"
 
-const AzurilPage: React.FC = () => {
+const AzurillPage: React.FC = () => {
   return (
-    <Layout pageTitle="💧 Azuril - The Polka Dot Pokemon">
+    <Layout pageTitle="💧 Azurill - The Polka Dot Pokemon">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              Azuril is an adorable Water and Normal-type Pokemon known for its large, 
+              Azurill is an adorable Water and Normal-type Pokemon known for its large, 
               bouncy tail filled with nutrients. This tiny Pokemon is playful and curious, 
               using its tail like a ball to bounce around and play with friends.
             </p>
 
-            <h2 className="text-2xl font-bold text-purple-600 mb-4">Azuril Characteristics</h2>
+            <h2 className="text-2xl font-bold text-purple-600 mb-4">Azurill Characteristics</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="bg-pink-50 rounded-lg p-4">
                 <h3 className="font-semibold text-pink-600 mb-2">🎈 Bouncy Tail</h3>
                 <p className="text-sm text-gray-700">
                   Its large tail is filled with nutrients and oil that makes it buoyant. 
-                  Azuril uses it to bounce around and even float on water.
+                  Azurill uses it to bounce around and even float on water.
                 </p>
               </div>
               <div className="bg-purple-50 rounded-lg p-4">
@@ -94,7 +94,7 @@ const AzurilPage: React.FC = () => {
 
         <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
           <p className="text-purple-700 font-semibold">
-            💧 Fun Fact: Azuril's tail can stretch and bounce up to twice its body height! 
+            💧 Fun Fact: Azurill's tail can stretch and bounce up to twice its body height! 
             It uses its tail as a flotation device when tired from swimming.
           </p>
         </div>
@@ -103,6 +103,6 @@ const AzurilPage: React.FC = () => {
   )
 }
 
-export default AzurilPage
+export default AzurillPage
 
-export const Head: HeadFC = () => <title>Azuril - Animal Friends</title>
+export const Head: HeadFC = () => <title>Azurill - Animal Friends</title>

@@ -306,10 +306,10 @@ const IndexPage: React.FC = () => {
                 🦌 Deerling
               </Link>
               <Link 
-                to="/azuril" 
+                to="/azurill" 
                 className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-4 py-3 rounded-lg text-center hover:from-blue-500 hover:to-blue-600 transition font-semibold"
               >
-                💧 Azuril
+                💧 Azurill
               </Link>
             </div>
           </div>

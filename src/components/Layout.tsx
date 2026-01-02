@@ -171,8 +171,8 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   <Link to="/deerling" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
                     Deerling
                   </Link>
-                  <Link to="/azuril" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
-                    Azuril
+                  <Link to="/azurill" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Azurill
                   </Link>
                 </div>
               </div>
