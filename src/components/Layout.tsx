@@ -286,6 +286,22 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   </Link>
                 </div>
               </div>
+              <div className="relative group">
+                <button className="text-white hover:text-pink-100 transition px-3 py-2 rounded">
+                  Pokemon Pets ▾
+                </button>
+                <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 min-w-[150px] right-0">
+                  <Link to="/pikachu" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Pikachu
+                  </Link>
+                  <Link to="/deerling" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Deerling
+                  </Link>
+                  <Link to="/azurill" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Azurill
+                  </Link>
+                </div>
+              </div>
               <DarkModeToggle />
             </div>
           </div>
