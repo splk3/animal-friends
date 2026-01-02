@@ -83,6 +83,30 @@ const IndexPage: React.FC = () => {
               >
                 🐷 Pigs
               </Link>
+              <Link 
+                to="/cow" 
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-pink-600 transition font-semibold"
+              >
+                🐄 Cows
+              </Link>
+              <Link 
+                to="/duck" 
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold"
+              >
+                🦆 Ducks
+              </Link>
+              <Link 
+                to="/lady-bug" 
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-pink-600 transition font-semibold"
+              >
+                🐞 Lady Bugs
+              </Link>
+              <Link 
+                to="/butterfly" 
+                className="bg-gradient-to-r from-purple-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-purple-600 transition font-semibold"
+              >
+                🦋 Butterflies
+              </Link>
             </div>
           </div>
 
@@ -128,7 +152,7 @@ const IndexPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-1">
             <div className="text-6xl text-center mb-4">✨🐾💫</div>
             <h2 className="text-2xl font-bold text-pink-600 text-center mb-4">Mixed Pets</h2>
@@ -148,6 +172,113 @@ const IndexPage: React.FC = () => {
                 className="bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:to-pink-600 transition font-semibold"
               >
                 🐱🦄 KittyCorn
+              </Link>
+              <Link 
+                to="/unipup" 
+                className="bg-gradient-to-r from-pink-400 to-purple-500 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:to-purple-600 transition font-semibold"
+              >
+                🐶🦄 UniPup
+              </Link>
+              <Link 
+                to="/mercat" 
+                className="bg-gradient-to-r from-cyan-400 to-teal-500 text-white px-4 py-3 rounded-lg text-center hover:from-cyan-500 hover:to-teal-600 transition font-semibold"
+              >
+                🐱🧜‍♀️ MerCat
+              </Link>
+              <Link 
+                to="/rainpup" 
+                className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-4 py-3 rounded-lg text-center hover:from-blue-500 hover:to-blue-600 transition font-semibold"
+              >
+                🐶💧 RainPup
+              </Link>
+              <Link 
+                to="/rainbird" 
+                className="bg-gradient-to-r from-blue-400 to-cyan-500 text-white px-4 py-3 rounded-lg text-center hover:from-blue-500 hover:to-cyan-600 transition font-semibold"
+              >
+                🐦💧 RainBird
+              </Link>
+              <Link 
+                to="/rainduck" 
+                className="bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-4 py-3 rounded-lg text-center hover:from-cyan-500 hover:to-blue-600 transition font-semibold"
+              >
+                🦆💧 RainDuck
+              </Link>
+              <Link 
+                to="/sundog" 
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-3 rounded-lg text-center hover:from-yellow-500 hover:to-orange-600 transition font-semibold"
+              >
+                🐶☀️ SunDog
+              </Link>
+              <Link 
+                to="/sunbird" 
+                className="bg-gradient-to-r from-orange-400 to-yellow-500 text-white px-4 py-3 rounded-lg text-center hover:from-orange-500 hover:to-yellow-600 transition font-semibold"
+              >
+                🐦☀️ SunBird
+              </Link>
+              <Link 
+                to="/sunbug" 
+                className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-4 py-3 rounded-lg text-center hover:from-yellow-500 hover:to-orange-500 transition font-semibold"
+              >
+                🐞☀️ SunBug
+              </Link>
+              <Link 
+                to="/sunbutterfly" 
+                className="bg-gradient-to-r from-orange-400 to-amber-500 text-white px-4 py-3 rounded-lg text-center hover:from-orange-500 hover:to-amber-600 transition font-semibold"
+              >
+                🦋☀️ SunButterfly
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-1">
+            <div className="text-6xl text-center mb-4">🌈✨🎨</div>
+            <h2 className="text-2xl font-bold text-pink-600 text-center mb-4">Rainbow Pets</h2>
+            <p className="text-gray-700 mb-6 text-center">
+              Experience the vibrant world of rainbow-colored companions! These dazzling pets 
+              shimmer with all the colors of the spectrum.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <Link 
+                to="/rainbow-dog" 
+                className="bg-gradient-to-r from-red-400 via-yellow-400 to-blue-400 text-white px-4 py-3 rounded-lg text-center hover:from-red-500 hover:via-yellow-500 hover:to-blue-500 transition font-semibold"
+              >
+                🌈🐕 Rainbow Dog
+              </Link>
+              <Link 
+                to="/rainbow-cat" 
+                className="bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-white px-4 py-3 rounded-lg text-center hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 transition font-semibold"
+              >
+                🌈🐈 Rainbow Cat
+              </Link>
+              <Link 
+                to="/rainbow-bird" 
+                className="bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 text-white px-4 py-3 rounded-lg text-center hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition font-semibold"
+              >
+                🌈🐦 Rainbow Bird
+              </Link>
+              <Link 
+                to="/rainbow-duck" 
+                className="bg-gradient-to-r from-yellow-400 via-green-400 to-cyan-400 text-white px-4 py-3 rounded-lg text-center hover:from-yellow-500 hover:via-green-500 hover:to-cyan-500 transition font-semibold"
+              >
+                🌈🦆 Rainbow Duck
+              </Link>
+              <Link 
+                to="/rainbow-lizard" 
+                className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-white px-4 py-3 rounded-lg text-center hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 transition font-semibold"
+              >
+                🌈🦎 Rainbow Lizard
+              </Link>
+              <Link 
+                to="/rainbow-cow" 
+                className="bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400 text-white px-4 py-3 rounded-lg text-center hover:from-red-500 hover:via-orange-500 hover:to-yellow-500 transition font-semibold"
+              >
+                🌈🐄 Rainbow Cow
+              </Link>
+              <Link 
+                to="/rainbow-pig" 
+                className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 text-white px-4 py-3 rounded-lg text-center hover:from-blue-500 hover:via-indigo-500 hover:to-purple-500 transition font-semibold col-span-2"
+              >
+                🌈🐷 Rainbow Pig
               </Link>
             </div>
           </div>

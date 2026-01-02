@@ -55,6 +55,18 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   <Link to="/pig" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
                     Pigs
                   </Link>
+                  <Link to="/cow" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Cows
+                  </Link>
+                  <Link to="/duck" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Ducks
+                  </Link>
+                  <Link to="/lady-bug" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Lady Bugs
+                  </Link>
+                  <Link to="/butterfly" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Butterflies
+                  </Link>
                 </div>
               </div>
               <div className="relative group">
@@ -89,6 +101,61 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
                   </Link>
                   <Link to="/kittycorn" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
                     KittyCorn
+                  </Link>
+                  <Link to="/unipup" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    UniPup
+                  </Link>
+                  <Link to="/mercat" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    MerCat
+                  </Link>
+                  <Link to="/rainpup" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    RainPup
+                  </Link>
+                  <Link to="/rainbird" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    RainBird
+                  </Link>
+                  <Link to="/sundog" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    SunDog
+                  </Link>
+                  <Link to="/sunbird" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    SunBird
+                  </Link>
+                  <Link to="/rainduck" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    RainDuck
+                  </Link>
+                  <Link to="/sunbug" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    SunBug
+                  </Link>
+                  <Link to="/sunbutterfly" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    SunButterfly
+                  </Link>
+                </div>
+              </div>
+              <div className="relative group">
+                <button className="text-white hover:text-pink-100 transition px-3 py-2 rounded">
+                  Rainbow Pets ▾
+                </button>
+                <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 min-w-[150px] right-0">
+                  <Link to="/rainbow-lizard" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Lizard
+                  </Link>
+                  <Link to="/rainbow-cat" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Cat
+                  </Link>
+                  <Link to="/rainbow-dog" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Dog
+                  </Link>
+                  <Link to="/rainbow-bird" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Bird
+                  </Link>
+                  <Link to="/rainbow-duck" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Duck
+                  </Link>
+                  <Link to="/rainbow-cow" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Cow
+                  </Link>
+                  <Link to="/rainbow-pig" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">
+                    Rainbow Pig
                   </Link>
                 </div>
               </div>
