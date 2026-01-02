@@ -1,10 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
-interface DropdownLink {
-  to: string
-  label: string
-}
+import { DropdownLink } from "../data/navigationData"
 
 interface MobileDropdownProps {
   id: string

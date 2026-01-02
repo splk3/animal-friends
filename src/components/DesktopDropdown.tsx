@@ -1,10 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
-interface DropdownLink {
-  to: string
-  label: string
-}
+import { DropdownLink } from "../data/navigationData"
 
 interface DesktopDropdownProps {
   id: string
@@ -37,7 +33,7 @@ const DesktopDropdown: React.FC<DesktopDropdownProps> = ({
 
   return (
     <div 
-      className="relative group"
+      className="relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -51,22 +47,24 @@ const DesktopDropdown: React.FC<DesktopDropdownProps> = ({
       >
         {title} ▾
       </button>
-      <div
-        id={`desktop-${id}-menu`}
-        className={`absolute ${isOpen ? 'block' : 'hidden'} group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 min-w-[150px] z-50 ${alignmentClass}`}
-        role="menu"
-      >
-        {links.map((link) => (
-          <Link
-            key={link.to}
-            to={link.to}
-            className="block px-4 py-2 text-purple-700 hover:bg-pink-100"
-            role="menuitem"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
+      {isOpen && (
+        <div
+          id={`desktop-${id}-menu`}
+          className={`absolute bg-white shadow-lg rounded-lg mt-2 py-2 min-w-[150px] z-50 ${alignmentClass}`}
+          role="menu"
+        >
+          {links.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="block px-4 py-2 text-purple-700 hover:bg-pink-100"
+              role="menuitem"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
