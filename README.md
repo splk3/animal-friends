@@ -90,12 +90,24 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 
 ## 🛠️ Technologies Used
 
-- [Gatsby 5.x](https://www.gatsbyjs.com/) - Static site generator
-- [React 18.3](https://react.dev/) - UI library
-- [TypeScript 5.7](https://www.typescriptlang.org/) - Type-safe JavaScript
-- [Tailwind CSS 3.x](https://tailwindcss.com/) - Utility-first CSS framework
-- [PostCSS](https://postcss.org/) - CSS processor
-- [Autoprefixer](https://github.com/postcss/autoprefixer) - CSS vendor prefixing
+### Core Technologies
+- [Gatsby 5.15.0](https://www.gatsbyjs.com/) - Static site generator
+- [React 18.3.1](https://react.dev/) - UI library
+- [TypeScript 5.9.3](https://www.typescriptlang.org/) - Type-safe JavaScript
+
+### Styling
+- [Tailwind CSS 4.1.18](https://tailwindcss.com/) - Utility-first CSS framework
+- [@tailwindcss/postcss 4.1.18](https://tailwindcss.com/docs/installation/using-postcss) - Tailwind PostCSS plugin
+- [PostCSS 8.5.6](https://postcss.org/) - CSS processor
+- [Autoprefixer 10.4.23](https://github.com/postcss/autoprefixer) - CSS vendor prefixing
+
+### Gatsby Plugins
+- [gatsby-plugin-postcss 6.15.0](https://www.gatsbyjs.com/plugins/gatsby-plugin-postcss/) - PostCSS integration for Gatsby
+
+### Type Definitions
+- @types/react 18.3.27
+- @types/react-dom 18.3.7
+- @types/node 25.0.3
 
 ## 📄 License
 
