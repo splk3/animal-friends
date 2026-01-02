@@ -21,8 +21,6 @@ updates:
         dependency-type: "production"
         patterns:
           - "*"
-        exclude-patterns:
-          - "@types/*"
         update-types:
           - "minor"
           - "patch"
