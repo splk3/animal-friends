@@ -286,7 +286,7 @@ const IndexPage: React.FC = () => {
 
         <div className="grid md:grid-cols-1 gap-8 mb-12">
           <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-1">
-            <div className="text-6xl text-center mb-4">⚡🎮🦌</div>
+            <div className="text-6xl text-center mb-4">⚡🕹️🦌</div>
             <h2 className="text-2xl font-bold text-purple-600 text-center mb-4">Pokemon Pets</h2>
             <p className="text-gray-700 mb-6 text-center">
               Enter the exciting world of Pokemon! These amazing creatures have unique abilities 
