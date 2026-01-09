@@ -76,7 +76,7 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 │   │   └── navigationData.ts       # Centralized navigation structure
 │   ├── pages/
 │   │   ├── index.tsx               # Homepage
-│   │   ├── Real Pets (23 pages)
+│   │   ├── Real Pets (26 pages)
 │   │   │   ├── dogs.tsx, cats.tsx, birds.tsx, fish.tsx
 │   │   │   ├── hamster.tsx, lizard.tsx, rabbit.tsx
 │   │   │   ├── seal.tsx, sea-otter.tsx, turtle.tsx
@@ -95,7 +95,7 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 │   │   │   ├── rainduck.tsx, sunbug.tsx, sunbutterfly.tsx
 │   │   │   ├── muppy.tsx, puuu-uuu-ppy.tsx, ghost-bug.tsx
 │   │   │   └── merala.tsx, bunnycorn.tsx, deermaid.tsx, sealycorn.tsx
-│   │   ├── Rainbow Pets (27 pages)
+│   │   ├── Rainbow Pets (28 pages)
 │   │   │   ├── rainbow-dog.tsx, rainbow-cat.tsx, rainbow-bird.tsx
 │   │   │   ├── rainbow-duck.tsx, rainbow-lizard.tsx, rainbow-cow.tsx
 │   │   │   ├── rainbow-pig.tsx, rainbow-dolphin.tsx, rainbow-pufferfish.tsx

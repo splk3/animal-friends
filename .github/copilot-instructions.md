@@ -23,7 +23,7 @@ src/
 │   └── navigationData.ts       # Centralized navigation structure
 ├── pages/
 │   ├── index.tsx               # Homepage
-│   └── [animal].tsx            # Individual animal pages (78 total pages)
+│   └── [animal].tsx            # Individual animal pages (82 animal pages + 1 homepage = 83 total)
 └── styles/
     └── global.css              # Global styles with Tailwind imports
 ```
