@@ -8,9 +8,11 @@ A fun and colorful website about animals that make good pets, featuring real-wor
 - **Type-Safe Development**: Full TypeScript support for components and configuration
 - **Beautiful Design**: Light pink and purple color palette with Tailwind CSS 4.1.18
 - **Comprehensive Content**: 
-  - Real pets: Dogs, Cats, Birds, Fish, and more
-  - Mythical creatures: Dragons, Unicorns, Phoenixes, and more
-  - Mixed pets: Magical hybrids like MerPup and KittyCorn
+  - Real pets: Dogs, Cats, Birds, Fish, Hamsters, Lizards, Rabbits, Seals, Sea Otters, Turtles, Pigs, Cows, Ducks, Lady Bugs, Butterflies, Elephants, Pandas, Seahorses, Horses, Koalas, Capybaras, Kangaroos, Bilbies, Foxes, Bears, and Deer
+  - Mythical creatures: Dragons, Unicorns, Phoenixes, Triceratops, Velociraptor, Loch Ness Monster, and SeaCorn
+  - Mixed pets: Magical hybrids like MerPup, KittyCorn, UniPup, MerCat, RainPup, RainBird, SunDog, SunBird, RainDuck, SunBug, SunButterfly, Muppy, Puuu-uuu-ppy, Ghost Bug, Merala, BunnyCorn, DeerMaid, and Sealycorn
+  - Rainbow pets: Rainbow variants of dogs, cats, birds, ducks, lizards, cows, pigs, dolphins, pufferfish, ladybugs, seals, butterflies, turtles, otters, hamsters, fish, elephants, bunnies, foxes, deer, bears, pandas, capybaras, bilbies, kangaroos, seahorses, horses, and koalas
+  - Pokemon pets: Pikachu, Deerling, and Azurill
 - **GitHub Pages Ready**: Automated deployment workflow included
 - **Fully Static**: No server-side rendering, perfect for hosting on GitHub Pages
 
@@ -66,26 +68,52 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 ```
 ├── src/
 │   ├── components/
-│   │   └── Layout.tsx          # Main layout component with navigation
+│   │   ├── Layout.tsx              # Main layout component with navigation
+│   │   ├── DarkModeToggle.tsx      # Dark mode toggle component
+│   │   ├── DesktopDropdown.tsx     # Desktop navigation dropdown
+│   │   └── MobileDropdown.tsx      # Mobile navigation dropdown
+│   ├── data/
+│   │   └── navigationData.ts       # Centralized navigation structure
 │   ├── pages/
-│   │   ├── index.tsx           # Homepage
-│   │   ├── dogs.tsx            # Dogs page
-│   │   ├── cats.tsx            # Cats page
-│   │   ├── birds.tsx           # Birds page
-│   │   ├── fish.tsx            # Fish page
-│   │   ├── dragons.tsx         # Dragons page
-│   │   ├── unicorns.tsx        # Unicorns page
-│   │   ├── phoenixes.tsx       # Phoenixes page
-│   │   ├── merpup.tsx          # MerPup page (mixed pet)
-│   │   └── kittycorn.tsx       # KittyCorn page (mixed pet)
+│   │   ├── index.tsx               # Homepage
+│   │   ├── Real Pets (23 pages)
+│   │   │   ├── dogs.tsx, cats.tsx, birds.tsx, fish.tsx
+│   │   │   ├── hamster.tsx, lizard.tsx, rabbit.tsx
+│   │   │   ├── seal.tsx, sea-otter.tsx, turtle.tsx
+│   │   │   ├── pig.tsx, cow.tsx, duck.tsx
+│   │   │   ├── lady-bug.tsx, butterfly.tsx
+│   │   │   ├── elephant.tsx, panda.tsx, seahorse.tsx, horse.tsx
+│   │   │   ├── koala.tsx, capybara.tsx, kangaroo.tsx, bilby.tsx
+│   │   │   └── fox.tsx, bear.tsx, deer.tsx
+│   │   ├── Mythical Pets (7 pages)
+│   │   │   ├── dragons.tsx, unicorns.tsx, phoenixes.tsx
+│   │   │   ├── triceratops.tsx, velociraptor.tsx
+│   │   │   └── loch-ness-monster.tsx, seacorn.tsx
+│   │   ├── Mixed Pets (18 pages)
+│   │   │   ├── merpup.tsx, kittycorn.tsx, unipup.tsx, mercat.tsx
+│   │   │   ├── rainpup.tsx, rainbird.tsx, sundog.tsx, sunbird.tsx
+│   │   │   ├── rainduck.tsx, sunbug.tsx, sunbutterfly.tsx
+│   │   │   ├── muppy.tsx, puuu-uuu-ppy.tsx, ghost-bug.tsx
+│   │   │   └── merala.tsx, bunnycorn.tsx, deermaid.tsx, sealycorn.tsx
+│   │   ├── Rainbow Pets (27 pages)
+│   │   │   ├── rainbow-dog.tsx, rainbow-cat.tsx, rainbow-bird.tsx
+│   │   │   ├── rainbow-duck.tsx, rainbow-lizard.tsx, rainbow-cow.tsx
+│   │   │   ├── rainbow-pig.tsx, rainbow-dolphin.tsx, rainbow-pufferfish.tsx
+│   │   │   ├── rainbow-ladybug.tsx, rainbow-seal.tsx, rainbow-butterfly.tsx
+│   │   │   ├── rainbow-turtle.tsx, rainbow-otter.tsx, rainbow-hamster.tsx
+│   │   │   ├── rainbow-fish.tsx, rainbow-elephant.tsx, rainbow-bunny.tsx
+│   │   │   ├── rainbow-fox.tsx, rainbow-deer.tsx, rainbow-bear.tsx
+│   │   │   ├── rainbow-panda.tsx, rainbow-capybara.tsx, rainbow-bilby.tsx
+│   │   │   └── rainbow-kangaroo.tsx, rainbow-seahorse.tsx, rainbow-horse.tsx, rainbow-koala.tsx
+│   │   └── Pokemon Pets (3 pages)
+│   │       └── pikachu.tsx, deerling.tsx, azurill.tsx
 │   └── styles/
-│       └── global.css          # Global styles with Tailwind imports
-├── gatsby-config.ts            # Gatsby configuration (TypeScript)
-├── tsconfig.json               # TypeScript configuration
-├── tailwind.config.js          # Tailwind CSS configuration
+│       └── global.css              # Global styles with Tailwind imports
+├── gatsby-config.ts                # Gatsby configuration (TypeScript)
+├── tsconfig.json                   # TypeScript configuration
 └── .github/
     └── workflows/
-        └── deploy.yml          # GitHub Pages deployment workflow
+        └── deploy.yml              # GitHub Pages deployment workflow
 ```
 
 ## 🛠️ Technologies Used
