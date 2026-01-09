@@ -110,6 +110,7 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 │   └── styles/
 │       └── global.css              # Global styles with Tailwind imports
 ├── gatsby-config.ts                # Gatsby configuration (TypeScript)
+├── postcss.config.js               # PostCSS and Tailwind CSS configuration
 ├── tsconfig.json                   # TypeScript configuration
 └── .github/
     └── workflows/
