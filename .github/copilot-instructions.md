@@ -1,13 +1,13 @@
 # Copilot Instructions for Animal Friends
 
 ## Project Overview
-Animal Friends is a static website built with Gatsby 5.x that provides information about animals as pets. The site features both real-world pets (dogs, cats, birds, fish, etc.) and mythical creatures (dragons, unicorns, phoenixes, etc.) in a fun and colorful design.
+Animal Friends is a static website built with Gatsby 5.x that provides information about animals as pets. The site features real-world pets, mythical creatures, magical mixed pets, rainbow-themed variants, and Pokemon pets in a fun and colorful design with dark mode support.
 
 ## Tech Stack
 - **Framework**: Gatsby 5.x (Static Site Generator)
 - **UI Library**: React 18.3
 - **Language**: TypeScript 5.9
-- **Styling**: Tailwind CSS 3.x
+- **Styling**: Tailwind CSS 4.x
 - **Build Tools**: PostCSS, Autoprefixer
 - **Deployment**: GitHub Pages via GitHub Actions
 
@@ -15,12 +15,17 @@ Animal Friends is a static website built with Gatsby 5.x that provides informati
 ```
 src/
 ├── components/
-│   └── Layout.tsx           # Main layout with navigation and footer
+│   ├── Layout.tsx              # Main layout with navigation and footer
+│   ├── DarkModeToggle.tsx      # Dark mode toggle component
+│   ├── DesktopDropdown.tsx     # Desktop navigation dropdown
+│   └── MobileDropdown.tsx      # Mobile navigation dropdown
+├── data/
+│   └── navigationData.ts       # Centralized navigation structure
 ├── pages/
-│   ├── index.tsx            # Homepage
-│   └── [animal].tsx         # Individual animal pages
+│   ├── index.tsx               # Homepage
+│   └── [animal].tsx            # Individual animal pages (82 animal pages + 1 homepage = 83 total)
 └── styles/
-    └── global.css           # Global styles with Tailwind imports
+    └── global.css              # Global styles with Tailwind imports
 ```
 
 ## Development Commands
@@ -52,13 +57,16 @@ src/
 
 ### Styling Guidelines
 - Use Tailwind CSS utility classes exclusively (no custom CSS unless necessary)
-- Color scheme: Pink and purple gradient theme
+- Color scheme: Pink and purple gradient theme with dark mode support
   - Primary colors: pink-500, purple-500, pink-600, purple-600
+  - Dark mode colors: purple-700, pink-700
   - Background gradients: from-pink-50 to purple-50, from-pink-100 to purple-100
-  - Navigation: gradient from pink-500 to purple-500
+  - Navigation: gradient from pink-500 to purple-500 (dark: from purple-700 to pink-700)
   - Hover states: use lighter shades (pink-100, purple-100)
+  - Dark mode backgrounds: gray-800, gray-900
+  - Dark mode text: gray-100
 - Responsive design: Use Tailwind's `md:` prefix for tablet/desktop breakpoints
-- Card styling: white background, rounded-lg, shadow-lg, with hover effects (shadow-2xl, transform, -translate-y-1)
+- Card styling: white background (dark: gray-800), rounded-lg, shadow-lg, with hover effects (shadow-2xl, transform, -translate-y-1)
 
 ### Page Layout Patterns
 - Use `max-w-4xl mx-auto` for main content containers
@@ -69,15 +77,18 @@ src/
   - Purple: `bg-gradient-to-r from-purple-400 to-purple-500`
 
 ### Navigation
-- Main navigation includes Home and multiple dropdown menus:
-  - **Real Pets** - Real-world animals (dogs, cats, birds, fish, hamsters, lizards, seals, sea otters, turtles, pigs, cows, ducks, lady bugs, butterflies)
-  - **Mythical Pets** - Fantasy creatures (dragons, unicorns, phoenixes, triceratops, velociraptor)
-  - **Mixed Pets** - Hybrid/magical combinations (merpup, kittycorn, unipup, mercat, rainpup, rainbird, sundog, sunbird, rainduck, sunbug, sunbutterfly)
-  - **Rainbow Pets** - Rainbow-themed variants (rainbow-lizard, rainbow-cat, rainbow-dog, rainbow-bird, rainbow-duck, rainbow-cow, rainbow-pig)
-- Dropdown menus should use: `group` parent with `group-hover:block` children
+- The navigation structure is centralized in `src/data/navigationData.ts`
+- Main navigation includes Home and five dropdown menus:
+  - **Real Pets** - Real-world animals (dogs, cats, birds, fish, hamsters, lizards, rabbits, seals, sea otters, turtles, pigs, cows, ducks, lady bugs, butterflies, elephants, pandas, seahorses, horses, koalas, capybaras, kangaroos, bilbies, foxes, bears, deer)
+  - **Mythical Pets** - Fantasy creatures (dragons, unicorns, phoenixes, triceratops, velociraptor, loch ness monster, seacorn)
+  - **Mixed Pets** - Hybrid/magical combinations (merpup, kittycorn, unipup, mercat, rainpup, rainbird, sundog, sunbird, rainduck, sunbug, sunbutterfly, muppy, puuu-uuu-ppy, ghost bug, merala, bunnycorn, deermaid, sealycorn)
+  - **Rainbow Pets** - Rainbow-themed variants (rainbow-dog, rainbow-cat, rainbow-bird, rainbow-duck, rainbow-lizard, rainbow-cow, rainbow-pig, rainbow-dolphin, rainbow-pufferfish, rainbow-ladybug, rainbow-seal, rainbow-butterfly, rainbow-turtle, rainbow-otter, rainbow-hamster, rainbow-fish, rainbow-elephant, rainbow-bunny, rainbow-fox, rainbow-deer, rainbow-bear, rainbow-panda, rainbow-capybara, rainbow-bilby, rainbow-kangaroo, rainbow-seahorse, rainbow-horse, rainbow-koala)
+  - **Pokemon Pets** - Pokemon characters (pikachu, deerling, azurill)
+- Desktop navigation uses the `DesktopDropdown` component with `group` parent and `group-hover:block` children
+- Mobile navigation uses the `MobileDropdown` component with accordion-style toggles
 - All navigation links should include hover transitions
 - Use emojis in navigation for visual appeal
-- **CRITICAL**: When adding a new page, you MUST add a corresponding link in the appropriate dropdown menu in `Layout.tsx`
+- **CRITICAL**: When adding a new page, you MUST add a corresponding link in `src/data/navigationData.ts` under the appropriate category
 
 ### Content Guidelines
 - Each animal page should include:
@@ -99,7 +110,7 @@ src/
 - No server-side rendering (SSR is disabled for GitHub Pages compatibility)
 
 ## Adding New Pages
-**IMPORTANT**: When adding a new page, you MUST update the navigation menu in `Layout.tsx` - this is not optional!
+**IMPORTANT**: When adding a new page, you MUST update the navigation in `src/data/navigationData.ts` - this is not optional!
 
 Follow these steps in order:
 1. Create new file in `src/pages/` with kebab-case naming (e.g., `sea-otter.tsx`)
@@ -107,28 +118,29 @@ Follow these steps in order:
 3. Use functional component with React.FC type
 4. Wrap content in Layout with appropriate pageTitle
 5. Export Head component with page title
-6. **REQUIRED**: Add navigation link in `src/components/Layout.tsx` under the appropriate dropdown menu:
-   - Real Pets dropdown (lines ~28-71) for real-world animals
-   - Mythical Pets dropdown (lines ~77-93) for fantasy creatures
-   - Mixed Pets dropdown (lines ~99-133) for hybrid/magical combinations
-   - Rainbow Pets dropdown (lines ~139-161) for rainbow-themed variants
-7. Follow the existing link pattern: `<Link to="/page-name" className="block px-4 py-2 text-purple-700 hover:bg-pink-100">Display Name</Link>`
+6. **REQUIRED**: Add navigation link in `src/data/navigationData.ts` under the appropriate category:
+   - `real` - Real Pets dropdown for real-world animals
+   - `mythical` - Mythical Pets dropdown for fantasy creatures
+   - `mixed` - Mixed Pets dropdown for hybrid/magical combinations
+   - `rainbow` - Rainbow Pets dropdown for rainbow-themed variants
+   - `pokemon` - Pokemon Pets dropdown for Pokemon characters
+7. Follow the existing link pattern: `{ to: '/page-name', label: 'Display Name' }`
 8. Follow existing page structure and styling patterns
 9. Test the navigation menu works by running `npm run develop` and clicking through the menu
 
 **Navigation Update Checklist**:
-- [ ] Navigation link added to `Layout.tsx`
+- [ ] Navigation link added to `src/data/navigationData.ts`
 - [ ] Link uses correct route path matching filename (without .tsx extension)
 - [ ] Link placed in appropriate dropdown menu category
-- [ ] Link follows existing styling pattern
-- [ ] Navigation tested in browser
+- [ ] Link follows existing data structure pattern
+- [ ] Navigation tested in browser (both desktop and mobile views)
 
 ## Best Practices
 - Maintain consistent color scheme (pink/purple theme)
 - Use semantic HTML elements within Tailwind classes
 - Keep components simple and focused
 - Follow existing patterns for consistency
-- **ALWAYS update navigation menus when adding new pages** - this is a critical requirement
+- **ALWAYS update navigation in `src/data/navigationData.ts` when adding new pages** - this is a critical requirement
 - Ensure all pages are accessible from navigation (verify by testing in browser)
 - Use emojis to add personality and visual interest
 - Test builds before deploying (`npm run build`)
