@@ -109,6 +109,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle, showBackButton = f
             <Link 
               to="/" 
               className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-400 to-purple-500 text-white px-6 py-3 rounded-lg hover:from-pink-500 hover:to-purple-600 transition font-semibold shadow-md hover:shadow-lg"
+              aria-label="Navigate back to home page"
             >
               <svg 
                 className="w-5 h-5" 
