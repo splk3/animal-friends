@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const CowPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐄 Cows - Gentle Giants">
+    <Layout pageTitle="🐄 Cows - Gentle Giants" showBackButton={true}>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">

@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const SunBirdPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐦☀️ SunBird - Radiant Feathered Light">
+    <Layout pageTitle="🐦☀️ SunBird - Radiant Feathered Light" showBackButton={true}>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">

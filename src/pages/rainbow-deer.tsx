@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const RainbowDeerPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🦌 Rainbow Deer - Colorful Deer">
+    <Layout pageTitle="🌈🦌 Rainbow Deer - Colorful Deer" showBackButton={true}>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
