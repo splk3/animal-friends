@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const SunButterflyPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦋☀️ SunButterfly - Glittering Wings of Light">
+    <Layout pageTitle="🦋☀️ SunButterfly - Glittering Wings of Light" showBackButton={true}>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">

@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const RainbowHamsterPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐹 Rainbow Hamster - Tiny Colorful Cuteness">
+    <Layout pageTitle="🌈🐹 Rainbow Hamster - Tiny Colorful Cuteness" showBackButton={true}>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="prose max-w-none">
