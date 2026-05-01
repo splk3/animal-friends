@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const PhoenixesPage: React.FC = () => {
   return (
-    <Layout pageTitle="🔥 Phoenixes - Eternal Flames of Rebirth" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🔥 Phoenixes - Eternal Flames of Rebirth"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Mythical Fact: Phoenix tears have powerful healing properties and can cure any
+            wound or illness!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Phoenix is a magnificent bird of flame and rebirth, known for its ability to 
               rise from its own ashes. These immortal creatures symbolize renewal, transformation, 
               and the eternal cycle of life.
@@ -88,17 +93,7 @@ const PhoenixesPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Mythical Fact: Phoenix tears have powerful healing properties and can cure any 
-            wound or illness!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

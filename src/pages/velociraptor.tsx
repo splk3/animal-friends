@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const VelociraptorPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦖 Velociraptor - Clever Hunters" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦖 Velociraptor - Clever Hunters"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Prehistoric Fact: Real Velociraptors were much smaller than portrayed in Jurassic
+            Park - the movie versions were actually based on the larger Deinonychus!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Velociraptors were small but fierce carnivorous dinosaurs known for their 
               intelligence and pack hunting behavior. While they're extinct (and definitely not 
               suitable as pets!), they remain fascinating creatures from the Late Cretaceous 
@@ -86,17 +91,7 @@ const VelociraptorPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Prehistoric Fact: Real Velociraptors were much smaller than portrayed in Jurassic 
-            Park - the movie versions were actually based on the larger Deinonychus!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

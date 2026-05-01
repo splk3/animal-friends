@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const MeralaPage: React.FC = () => {
   return (
-    <Layout pageTitle="🧜‍♀️🐨 Merala - Aquatic Koala Hybrid" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🧜‍♀️🐨 Merala - Aquatic Koala Hybrid"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🐨 Fun Fact: Meralas can hold their breath for up to 30 minutes! They often nap
+            while floating on their backs, holding eucalyptus leaves on their bellies like sea otters!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Merala is an enchanting blend of mermaid grace and koala cuteness. These adorable 
               aquatic marsupials combine the mermaid's love of water with the koala's gentle, 
               laid-back personality. They're excellent swimmers who still enjoy a good eucalyptus 
@@ -90,17 +95,7 @@ const MeralaPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🐨 Fun Fact: Meralas can hold their breath for up to 30 minutes! They often nap 
-            while floating on their backs, holding eucalyptus leaves on their bellies like sea otters!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

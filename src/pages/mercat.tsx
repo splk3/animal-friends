@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const MerCatPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐱🧜‍♀️ MerCat - Aquatic Feline Magic" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐱🧜‍♀️ MerCat - Aquatic Feline Magic"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Fun Fact: MerCats can purr both on land and underwater, creating beautiful musical
+            bubbles when swimming. They're also known to befriend fish!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The MerCat is a captivating blend of a curious cat and the graceful elegance of a mermaid. 
               These enchanting companions love both lounging in sunny spots and swimming in crystal-clear waters, 
               bringing the best of land and sea into your home.
@@ -89,17 +94,7 @@ const MerCatPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: MerCats can purr both on land and underwater, creating beautiful musical 
-            bubbles when swimming. They're also known to befriend fish!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

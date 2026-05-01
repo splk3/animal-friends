@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const UnicornsPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦄 Unicorns - Pure and Magical" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦄 Unicorns - Pure and Magical"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Mythical Fact: Unicorn horns (called alicorns) were believed to have powerful
+            healing properties and could neutralize poison!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Unicorns are symbols of purity, grace, and magic. These elegant creatures with their 
               distinctive single horn are known for their healing powers and connection to nature. 
               They represent everything beautiful and good in the world.
@@ -88,17 +93,7 @@ const UnicornsPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Mythical Fact: Unicorn horns (called alicorns) were believed to have powerful 
-            healing properties and could neutralize poison!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const DeerlingPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦌 Deerling - The Season Pokemon" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦌 Deerling - The Season Pokemon"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌿 Fun Fact: Deerling's body temperature changes with the seasons! It can sense
+            seasonal changes before they happen and prepare accordingly.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Deerling is a charming Grass and Normal-type Pokemon that resembles a small deer. 
               This Pokemon is unique for changing its appearance with the seasons, making it a 
               delightful companion that reflects nature's beauty year-round.
@@ -89,17 +94,7 @@ const DeerlingPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌿 Fun Fact: Deerling's body temperature changes with the seasons! It can sense 
-            seasonal changes before they happen and prepare accordingly.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowBearPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐻 Rainbow Bear - Colorful Bears" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🐻 Rainbow Bear - Colorful Bears"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Bears create colorful displays wherever they go!
+            Their presence makes the environment more vibrant and joyful!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Bear combines the characteristics of bears with stunning 
               rainbow-colored patterns. These magnificent creatures display all the colors of the 
               spectrum, bringing joy and wonder wherever they go!
@@ -89,17 +94,7 @@ const RainbowBearPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Bears create colorful displays wherever they go! 
-            Their presence makes the environment more vibrant and joyful!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

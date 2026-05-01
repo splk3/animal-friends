@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const TurtlePage: React.FC = () => {
   return (
-    <Layout pageTitle="🐢 Turtles - Ancient Shelled Companions" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐢 Turtles - Ancient Shelled Companions"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Some turtles can live over 100 years, making them pets that can be
+            passed down through generations!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Turtles are reptiles with protective shells that have existed for over 200 million 
               years. These calm, long-lived creatures make fascinating pets for those willing to 
               commit to their specialized care requirements.
@@ -85,17 +90,7 @@ const TurtlePage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Some turtles can live over 100 years, making them pets that can be 
-            passed down through generations!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

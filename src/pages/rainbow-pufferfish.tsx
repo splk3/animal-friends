@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowPufferfishPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐡 Rainbow Pufferfish - Colorful Water Balloon" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🐡 Rainbow Pufferfish - Colorful Water Balloon"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Pufferfish can puff up in under 2 seconds! Their rainbow water
+            spray is completely harmless and actually helps clean nearby decorations!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Pufferfish is an adorable aquatic companion that combines the unique defense 
               mechanism of pufferfish with spectacular rainbow coloring. When threatened, they puff up 
               into a rainbow ball and shoot out rainbow-colored water - making them both protective 
@@ -90,17 +95,7 @@ const RainbowPufferfishPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Pufferfish can puff up in under 2 seconds! Their rainbow water 
-            spray is completely harmless and actually helps clean nearby decorations!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowLadybugPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐞 Rainbow Ladybug - Tiny Colorful Friend" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🐞 Rainbow Ladybug - Tiny Colorful Friend"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Ladybugs can create tiny rainbows when sunlight hits their
+            wings! A group of them in flight looks like a flying rainbow!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Ladybug is an adorable tiny companion with a shell painted in all the 
               colors of the rainbow. These beneficial insects bring good luck and garden health 
               while dazzling with their spectacular spectrum colors!
@@ -89,17 +94,7 @@ const RainbowLadybugPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Ladybugs can create tiny rainbows when sunlight hits their 
-            wings! A group of them in flight looks like a flying rainbow!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

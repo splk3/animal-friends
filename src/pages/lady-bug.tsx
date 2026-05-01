@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const LadyBugPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐞 Lady Bugs - Garden Guardians" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐞 Lady Bugs - Garden Guardians"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Lady bugs are considered symbols of good luck in many cultures!
+            They also taste terrible to predators, which is why they have such bright warning colors.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Lady bugs, also known as ladybirds or ladybird beetles, are delightful insects that 
               bring good luck and natural pest control to gardens. These charming beetles are popular 
               with children and adults alike for their bright colors and beneficial nature.
@@ -86,17 +91,7 @@ const LadyBugPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Lady bugs are considered symbols of good luck in many cultures! 
-            They also taste terrible to predators, which is why they have such bright warning colors.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

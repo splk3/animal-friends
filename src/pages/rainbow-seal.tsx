@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowSealPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🦭 Rainbow Seal - Aquatic Rainbow Beauty" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🦭 Rainbow Seal - Aquatic Rainbow Beauty"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Seals can hold their breath for up to 30 minutes! Their whiskers
+            shimmer with rainbow colors and help them detect prey in murky water!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Seal combines the playful charm of seals with stunning rainbow-colored 
               fur. These marine mammals create colorful waves when they swim and bring joy to 
               everyone who sees them diving and playing in the water!
@@ -89,17 +94,7 @@ const RainbowSealPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Seals can hold their breath for up to 30 minutes! Their whiskers 
-            shimmer with rainbow colors and help them detect prey in murky water!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const SealPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦭 Seals - Playful Marine Mammals" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦭 Seals - Playful Marine Mammals"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Seals can sleep underwater and automatically come up for air
+            without waking up!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               While seals aren't traditional pets (they're wild marine mammals!), learning about 
               them can inspire conservation efforts. Seals are intelligent, social, and fascinating 
               creatures that play a vital role in marine ecosystems.
@@ -85,17 +90,7 @@ const SealPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Seals can sleep underwater and automatically come up for air 
-            without waking up!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

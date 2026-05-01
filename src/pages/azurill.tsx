@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const AzurillPage: React.FC = () => {
   return (
-    <Layout pageTitle="💧 Azurill - The Polka Dot Pokemon" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="💧 Azurill - The Polka Dot Pokemon"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💧 Fun Fact: Azurill's tail can stretch and bounce up to twice its body height!
+            It uses its tail as a flotation device when tired from swimming.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Azurill is an adorable Water and Normal-type Pokemon known for its large, 
               bouncy tail filled with nutrients. This tiny Pokemon is playful and curious, 
               using its tail like a ball to bounce around and play with friends.
@@ -89,17 +94,7 @@ const AzurillPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💧 Fun Fact: Azurill's tail can stretch and bounce up to twice its body height! 
-            It uses its tail as a flotation device when tired from swimming.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

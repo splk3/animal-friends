@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowButterflyPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🦋 Rainbow Butterfly - Wings of Spectrum" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🦋 Rainbow Butterfly - Wings of Spectrum"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Butterflies can taste with their feet! When they land on flowers,
+            they know immediately if the nectar is sweet enough. Their wings never fade!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Butterfly showcases nature's most spectacular colors on delicate wings. 
               These enchanting insects flutter through gardens creating living rainbows, bringing 
               joy, pollinating flowers, and leaving sparkle trails in their wake.
@@ -89,17 +94,7 @@ const RainbowButterflyPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Butterflies can taste with their feet! When they land on flowers, 
-            they know immediately if the nectar is sweet enough. Their wings never fade!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

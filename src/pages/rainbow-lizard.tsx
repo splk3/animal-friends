@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowLizardPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦎🌈 Rainbow Lizard - Colorful Scale Magic" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦎🌈 Rainbow Lizard - Colorful Scale Magic"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Lizards' colors become more vibrant when they're happy and healthy!
+            They're also excellent climbers and love to show off their colors in the sun.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Lizard is a stunning reptile that displays vibrant rainbow colors across its scales. 
               While they don't have special magical powers, their incredible color-changing patterns make them 
               one of the most beautiful and sought-after pets in the rainbow category.
@@ -89,17 +94,7 @@ const RainbowLizardPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Lizards' colors become more vibrant when they're happy and healthy! 
-            They're also excellent climbers and love to show off their colors in the sun.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

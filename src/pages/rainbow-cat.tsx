@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowCatPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐱🌈 Rainbow Cat - Prismatic Feline Beauty" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐱🌈 Rainbow Cat - Prismatic Feline Beauty"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Cats purr in perfect harmony with all colors of their fur!
+            Their unique coloring is permanent and doesn't fade, passing down to their kittens.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Cat is a stunning feline with fur that displays beautiful rainbow colors. 
               These colorful companions have all the personality and charm of regular cats, but with 
               the added visual delight of rainbow patterns that shimmer and shift as they move.
@@ -89,17 +94,7 @@ const RainbowCatPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Cats purr in perfect harmony with all colors of their fur! 
-            Their unique coloring is permanent and doesn't fade, passing down to their kittens.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

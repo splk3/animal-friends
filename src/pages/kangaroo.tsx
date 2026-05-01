@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const KangarooPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦘 Kangaroos - Hopping Icons of Australia" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦘 Kangaroos - Hopping Icons of Australia"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Kangaroos can't walk backwards, which is why they appear on the
+            Australian coat of arms - symbolizing moving forward!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Kangaroos are iconic Australian marsupials famous for their powerful hind legs and 
               hopping locomotion. While they're wild animals that shouldn't be kept as typical pets, 
               learning about kangaroos helps us appreciate Australia's unique wildlife.
@@ -89,17 +94,7 @@ const KangarooPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Kangaroos can't walk backwards, which is why they appear on the 
-            Australian coat of arms - symbolizing moving forward!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

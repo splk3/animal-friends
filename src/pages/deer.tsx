@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const DeerPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦌 Deer - Graceful Forest Dwellers" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦌 Deer - Graceful Forest Dwellers"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Deer have excellent night vision and can see ultraviolet light,
+            helping them spot predators and find food in low light!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Deer are elegant wild animals known for their grace, beauty, and distinctive antlers. 
               While they're wild animals that shouldn't be kept as traditional pets, learning about 
               deer helps us appreciate these gentle herbivores that inhabit forests and grasslands worldwide.
@@ -89,17 +94,7 @@ const DeerPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Deer have excellent night vision and can see ultraviolet light, 
-            helping them spot predators and find food in low light!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

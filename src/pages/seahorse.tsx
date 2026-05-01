@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const SeahorsePage: React.FC = () => {
   return (
-    <Layout pageTitle="🐴🌊 Seahorses - Enchanting Ocean Dancers" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐴🌊 Seahorses - Enchanting Ocean Dancers"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Seahorses are monogamous and perform elaborate daily greeting
+            dances with their partners!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Seahorses are fascinating marine fish known for their unique appearance and behaviors. 
               While keeping seahorses requires advanced aquarium skills, these magical creatures 
               captivate with their horse-like heads and upright swimming style.
@@ -89,17 +94,7 @@ const SeahorsePage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Seahorses are monogamous and perform elaborate daily greeting 
-            dances with their partners!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

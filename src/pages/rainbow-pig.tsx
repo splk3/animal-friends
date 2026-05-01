@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowPigPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐷🌈 Rainbow Pig - Colorful Intelligent Friends" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐷🌈 Rainbow Pig - Colorful Intelligent Friends"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Pigs are just as smart as regular pigs (smarter than dogs!), and
+            their rainbow colors shift slightly when they're happy or excited!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Pig is an intelligent, social animal with skin or fur displaying beautiful 
               rainbow colors. These colorful companions combine the smarts and affectionate nature of 
               regular pigs with the visual delight of rainbow patterns, making them unique and charming pets.
@@ -89,17 +94,7 @@ const RainbowPigPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Pigs are just as smart as regular pigs (smarter than dogs!), and 
-            their rainbow colors shift slightly when they're happy or excited!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

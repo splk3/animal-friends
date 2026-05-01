@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const KittyCornPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐱🦄 KittyCorn - Magical Feline Wonder" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐱🦄 KittyCorn - Magical Feline Wonder"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Fun Fact: A KittyCorn's purr has healing properties and their horn can glow
+            in different colors based on their mood!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The KittyCorn combines the independent charm of a kitten with the magical wonder 
               of a unicorn. These mystical felines possess a spiraling horn on their forehead 
               and often display shimmering, rainbow-hued fur that sparkles in the light.
@@ -89,17 +94,7 @@ const KittyCornPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: A KittyCorn's purr has healing properties and their horn can glow 
-            in different colors based on their mood!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

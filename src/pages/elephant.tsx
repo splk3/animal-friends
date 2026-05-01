@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const ElephantPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐘 Elephants - Majestic Giants" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐘 Elephants - Majestic Giants"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Elephants are pregnant for 22 months - the longest gestation period
+            of any mammal!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               While elephants aren't traditional pets (they're magnificent wild animals!), learning about 
               them helps us appreciate these intelligent, social giants and support conservation efforts. 
               Elephants are the largest land mammals and display remarkable intelligence and emotional depth.
@@ -89,17 +94,7 @@ const ElephantPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Elephants are pregnant for 22 months - the longest gestation period 
-            of any mammal!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

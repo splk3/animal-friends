@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const CapybaraPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦫 Capybaras - Gentle Giants of the Rodent World" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦫 Capybaras - Gentle Giants of the Rodent World"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Capybaras are so chill that birds, monkeys, and other animals often
+            sit on them, and they don't mind at all!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Capybaras are the world's largest rodents and internet sensations known for their 
               calm, friendly nature. These semi-aquatic South American natives are highly social 
               and get along well with many other animals, earning them the nickname "nature's chairs."
@@ -89,17 +94,7 @@ const CapybaraPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Capybaras are so chill that birds, monkeys, and other animals often 
-            sit on them, and they don't mind at all!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

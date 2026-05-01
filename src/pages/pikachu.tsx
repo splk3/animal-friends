@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const PikachuPage: React.FC = () => {
   return (
-    <Layout pageTitle="⚡ Pikachu - The Electric Mouse Pokemon" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="⚡ Pikachu - The Electric Mouse Pokemon"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ⚡ Fun Fact: A group of Pikachu can generate enough electricity to cause a
+            lightning storm! They communicate through electrical waves.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Pikachu is an adorable Electric-type Pokemon known for its bright yellow fur, 
               rosy cheeks, and lightning bolt-shaped tail. This iconic Pokemon is friendly, 
               loyal, and makes an excellent companion for trainers of all ages.
@@ -89,17 +94,7 @@ const PikachuPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ⚡ Fun Fact: A group of Pikachu can generate enough electricity to cause a 
-            lightning storm! They communicate through electrical waves.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RabbitPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐰 Rabbits - Gentle Hoppers" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐰 Rabbits - Gentle Hoppers"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Rabbits can jump 3 feet high and 10 feet long! They also do a happy
+            dance called a "binky" when they're excited.
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Rabbits are charming, social pets that make wonderful companions for dedicated owners. 
               These intelligent animals can be litter-trained, learn tricks, and form strong bonds 
               with their families. They require daily attention and proper care to thrive.
@@ -89,17 +94,7 @@ const RabbitPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Rabbits can jump 3 feet high and 10 feet long! They also do a happy 
-            dance called a "binky" when they're excited.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

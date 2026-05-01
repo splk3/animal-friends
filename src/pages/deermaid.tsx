@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const DeerMaidPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦌🧜‍♀️ DeerMaid - Forest and Sea United" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦌🧜‍♀️ DeerMaid - Forest and Sea United"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Magical Fact: DeerMaids can call forest animals and sea creatures simultaneously!
+            Their antlers grow coral and flowers at the same time, creating stunning natural crowns!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The DeerMaid is a graceful fusion of deer elegance and mermaid mystique. These 
               beautiful creatures have the upper body of a deer with majestic antlers and the lower 
               body of a mermaid with flowing tail fins. They navigate both forest streams and 
@@ -90,17 +95,7 @@ const DeerMaidPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Magical Fact: DeerMaids can call forest animals and sea creatures simultaneously! 
-            Their antlers grow coral and flowers at the same time, creating stunning natural crowns!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

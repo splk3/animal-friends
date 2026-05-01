@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowTurtlePage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐢 Rainbow Turtle - Slow and Colorful" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🐢 Rainbow Turtle - Slow and Colorful"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            🌈 Fun Fact: Rainbow Turtles' shells grow more beautiful with age! Older turtles
+            have the most vivid, deep rainbow colors. Some live over 100 years!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Turtle is a gentle companion with a shell painted in all the colors of 
               the rainbow. These calm, long-lived pets combine the peaceful nature of turtles with 
               spectacular rainbow patterns that bring joy and tranquility to any home.
@@ -89,17 +94,7 @@ const RainbowTurtlePage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Turtles' shells grow more beautiful with age! Older turtles 
-            have the most vivid, deep rainbow colors. Some live over 100 years!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

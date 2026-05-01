@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const PandaPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐼 Pandas - Adorable Bamboo Lovers" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐼 Pandas - Adorable Bamboo Lovers"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Pandas have a special "thumb" - actually an enlarged wrist bone -
+            that helps them grip bamboo stalks!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Giant pandas are beloved icons of wildlife conservation. While they're wild animals 
               that belong in nature, learning about these gentle bamboo eaters helps us appreciate 
               the importance of protecting endangered species and their habitats.
@@ -89,17 +94,7 @@ const PandaPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Pandas have a special "thumb" - actually an enlarged wrist bone - 
-            that helps them grip bamboo stalks!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

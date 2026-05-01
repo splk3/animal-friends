@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const UniPupPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦄🐶 UniPup - Magical Puppy Companion" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦄🐶 UniPup - Magical Puppy Companion"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            ✨ Fun Fact: UniPups can sense when their owners are sad and will nuzzle them with their
+            horn, which has mild healing properties that boost happiness!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The UniPup is a delightful fusion of a loyal puppy and the mystical magic of a unicorn. 
               With their spiraling horn and playful nature, UniPups bring both enchantment and 
               unconditional love to any home.
@@ -87,17 +92,7 @@ const UniPupPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: UniPups can sense when their owners are sad and will nuzzle them with their 
-            horn, which has mild healing properties that boost happiness!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

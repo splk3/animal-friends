@@ -1,14 +1,19 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const SeaOtterPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦦 Sea Otters - Adorable Ocean Engineers" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦦 Sea Otters - Adorable Ocean Engineers"
+      funFact={
+        <><p className="text-purple-700 font-semibold">
+            💡 Did you know? Sea otters hold hands while sleeping to keep from drifting apart -
+            it's one of the cutest behaviors in the animal kingdom!
+          </p></>
+      }
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Sea otters are charismatic marine mammals known for their playful behavior, 
               tool use, and vital role in kelp forest ecosystems. While they're not pets, 
               they're beloved by wildlife enthusiasts worldwide for their adorable antics.
@@ -85,17 +90,7 @@ const SeaOtterPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Sea otters hold hands while sleeping to keep from drifting apart - 
-            it's one of the cutest behaviors in the animal kingdom!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 
