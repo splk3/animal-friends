@@ -7,11 +7,11 @@ interface MobileDropdownProps {
   title: string
   links: DropdownLink[]
   isOpen: boolean
-  onToggle: () => void
+  onToggle: (id: string) => void
   onLinkClick: () => void
 }
 
-const MobileDropdown: React.FC<MobileDropdownProps> = ({
+const MobileDropdown: React.FC<MobileDropdownProps> = React.memo(({
   id,
   title,
   links,
@@ -19,17 +19,21 @@ const MobileDropdown: React.FC<MobileDropdownProps> = ({
   onToggle,
   onLinkClick,
 }) => {
+  const handleToggle = React.useCallback(() => {
+    onToggle(id)
+  }, [id, onToggle])
+
   const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault()
-      onToggle()
+      handleToggle()
     }
   }
 
   return (
     <div>
       <button
-        onClick={onToggle}
+        onClick={handleToggle}
         onKeyDown={handleKeyDown}
         className="w-full text-left text-white hover:bg-white/10 transition px-3 py-2 rounded flex justify-between items-center"
         aria-expanded={isOpen}
@@ -59,6 +63,8 @@ const MobileDropdown: React.FC<MobileDropdownProps> = ({
       )}
     </div>
   )
-}
+})
+
+MobileDropdown.displayName = "MobileDropdown"
 
 export default MobileDropdown
