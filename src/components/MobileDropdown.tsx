@@ -23,12 +23,12 @@ const MobileDropdown = React.memo<MobileDropdownProps>(({
     onToggle(id)
   }, [id, onToggle])
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+  const handleKeyDown = React.useCallback((event: React.KeyboardEvent<HTMLButtonElement>) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault()
       handleToggle()
     }
-  }
+  }, [handleToggle])
 
   return (
     <div>
