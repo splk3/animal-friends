@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const SeaCornPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦄🌊 SeaCorn - Ocean Unicorn Magic" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦄🌊 SeaCorn - Ocean Unicorn Magic"
+      funFact="🌊 Mythical Fact: When SeaCorns gallop across the ocean surface, they leave bioluminescent hoofprints that glow for hours! Sailors consider them signs of good fortune."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The SeaCorn is a magnificent unicorn blessed with powerful ocean and sea magic. These 
               enchanting creatures combine the grace and purity of unicorns with mastery over water, 
               tides, and marine life. They can breathe underwater and command the seas with their 
@@ -90,17 +90,7 @@ const SeaCornPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌊 Mythical Fact: When SeaCorns gallop across the ocean surface, they leave 
-            bioluminescent hoofprints that glow for hours! Sailors consider them signs of good fortune.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

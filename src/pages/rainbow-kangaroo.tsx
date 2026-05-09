@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowKangarooPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🦘 Rainbow Kangaroo - Colorful Kangaroos" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🦘 Rainbow Kangaroo - Colorful Kangaroos"
+      funFact="🌈 Fun Fact: Rainbow Kangaroos create colorful displays wherever they go! Their presence makes the environment more vibrant and joyful!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Kangaroo combines the characteristics of kangaroos with stunning 
               rainbow-colored patterns. These magnificent creatures display all the colors of the 
               spectrum, bringing joy and wonder wherever they go!
@@ -89,17 +89,7 @@ const RainbowKangarooPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Kangaroos create colorful displays wherever they go! 
-            Their presence makes the environment more vibrant and joyful!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 
