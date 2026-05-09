@@ -11,7 +11,7 @@ interface MobileDropdownProps {
   onLinkClick: () => void
 }
 
-const MobileDropdown: React.FC<MobileDropdownProps> = React.memo(({
+const MobileDropdown = React.memo<MobileDropdownProps>(({
   id,
   title,
   links,
