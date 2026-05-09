@@ -6,12 +6,7 @@ const RainbowPufferfishPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐡 Rainbow Pufferfish - Colorful Water Balloon"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Pufferfish can puff up in under 2 seconds! Their rainbow water
-            spray is completely harmless and actually helps clean nearby decorations!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Pufferfish can puff up in under 2 seconds! Their rainbow water spray is completely harmless and actually helps clean nearby decorations!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Pufferfish is an adorable aquatic companion that combines the unique defense 

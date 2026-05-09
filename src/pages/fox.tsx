@@ -6,12 +6,7 @@ const FoxPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦊 Foxes - Clever and Wild"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Foxes use their fluffy tails as a warm blanket in cold weather and
-            for balance when running!
-          </p></>
-      }
+      funFact="💡 Did you know? Foxes use their fluffy tails as a warm blanket in cold weather and for balance when running!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Foxes are intelligent, adaptable wild animals known for their cunning nature and 

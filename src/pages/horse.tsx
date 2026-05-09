@@ -6,12 +6,7 @@ const HorsePage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐴 Horses - Majestic Companions"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Horses can sleep both lying down and standing up, and they only
-            need about 3 hours of sleep per day!
-          </p></>
-      }
+      funFact="💡 Did you know? Horses can sleep both lying down and standing up, and they only need about 3 hours of sleep per day!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Horses have been human companions for thousands of years, serving as working animals, 

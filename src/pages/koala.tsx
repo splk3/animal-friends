@@ -6,12 +6,7 @@ const KoalaPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐨 Koalas - Cuddly Eucalyptus Lovers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Koalas have fingerprints that are almost indistinguishable from
-            human fingerprints - even under a microscope!
-          </p></>
-      }
+      funFact="💡 Did you know? Koalas have fingerprints that are almost indistinguishable from human fingerprints - even under a microscope!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Koalas are iconic Australian marsupials known for their adorable appearance and 

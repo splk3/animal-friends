@@ -6,12 +6,7 @@ const RainbowCowPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐄🌈 Rainbow Cow - Colorful Gentle Giants"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Cows' colors become more vivid when they're happy! They're known
-            to have best friends just like regular cows and love showing off their colors in sunshine.
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Cows' colors become more vivid when they're happy! They're known to have best friends just like regular cows and love showing off their colors in sunshine."
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Cow is a magnificent bovine with a coat displaying beautiful rainbow colors. 

@@ -6,12 +6,7 @@ const GhostBugPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="👻🐛 Ghost Bug - Ethereal Insect Friend"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Magical Fact: Ghost Bugs can sense emotions and will glow extra bright to cheer
-            you up when you're sad! A group of ghost bugs is called a "whisper."
-          </p></>
-      }
+      funFact={'✨ Magical Fact: Ghost Bugs can sense emotions and will glow extra bright to cheer you up when you\'re sad! A group of ghost bugs is called a "whisper."'}
     >
       <p className="text-lg text-gray-700 mb-6">
               The Ghost Bug is a delightful combination of a bug and a ghost - tiny, translucent, 

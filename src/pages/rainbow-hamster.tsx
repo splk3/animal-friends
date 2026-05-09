@@ -6,12 +6,7 @@ const RainbowHamsterPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐹 Rainbow Hamster - Tiny Colorful Cuteness"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Hamsters can fit incredible amounts of food in their cheeks -
-            each cheek pouch extends to their hips! They glow slightly in moonlight!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Hamsters can fit incredible amounts of food in their cheeks - each cheek pouch extends to their hips! They glow slightly in moonlight!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Hamster is an adorable small pet with fur that displays all the colors 

@@ -6,12 +6,7 @@ const CapybaraPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦫 Capybaras - Gentle Giants of the Rodent World"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Capybaras are so chill that birds, monkeys, and other animals often
-            sit on them, and they don't mind at all!
-          </p></>
-      }
+      funFact="💡 Did you know? Capybaras are so chill that birds, monkeys, and other animals often sit on them, and they don't mind at all!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Capybaras are the world's largest rodents and internet sensations known for their 

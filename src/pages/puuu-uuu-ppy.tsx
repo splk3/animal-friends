@@ -6,12 +6,7 @@ const PuuuUuuPpyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="👻🐶 Puuu-uuu-ppy - Spooky Yet Adorable Ghost Puppy"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            👻 Spooky Fact: Puuu-uuu-ppies say "puuu-uuu" instead of "woof"! Their howls sound
-            like gentle wind chimes. They can sense spirits and always know when Halloween is coming!
-          </p></>
-      }
+      funFact={'👻 Spooky Fact: Puuu-uuu-ppies say "puuu-uuu" instead of "woof"! Their howls sound like gentle wind chimes. They can sense spirits and always know when Halloween is coming!'}
     >
       <p className="text-lg text-gray-700 mb-6">
               The Puuu-uuu-ppy is an enchanting blend of ghost and puppy - spooky and yet still 

@@ -6,12 +6,7 @@ const RainbowSealPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🦭 Rainbow Seal - Aquatic Rainbow Beauty"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Seals can hold their breath for up to 30 minutes! Their whiskers
-            shimmer with rainbow colors and help them detect prey in murky water!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Seals can hold their breath for up to 30 minutes! Their whiskers shimmer with rainbow colors and help them detect prey in murky water!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Seal combines the playful charm of seals with stunning rainbow-colored 

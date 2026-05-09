@@ -6,12 +6,7 @@ const TriceratopsPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦕 Triceratops - Three-Horned Giants"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Prehistoric Fact: Triceratops means "three-horned face" in Greek, and they lived
-            alongside T. rex 68-66 million years ago!
-          </p></>
-      }
+      funFact={'✨ Prehistoric Fact: Triceratops means "three-horned face" in Greek, and they lived alongside T. rex 68-66 million years ago!'}
     >
       <p className="text-lg text-gray-700 mb-6">
               Triceratops were magnificent herbivorous dinosaurs that lived during the Late 

@@ -6,12 +6,7 @@ const BirdsPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐦 Birds - Colorful Companions"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Some parrot species can live for over 50 years, making them
-            lifelong companions!
-          </p></>
-      }
+      funFact="💡 Did you know? Some parrot species can live for over 50 years, making them lifelong companions!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Birds bring color, song, and personality to any home. From small finches to 

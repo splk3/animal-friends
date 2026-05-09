@@ -6,12 +6,7 @@ const FishPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐠 Fish - Serene Aquatic Friends"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Fish can recognize their owners and may swim to the front of the tank
-            when they see you!
-          </p></>
-      }
+      funFact="💡 Did you know? Fish can recognize their owners and may swim to the front of the tank when they see you!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Fish offer a peaceful, low-maintenance pet option that brings beauty and tranquility 

@@ -6,12 +6,7 @@ const RainbowBunnyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐰 Rainbow Bunny - Colorful Bunnies"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Bunnies create colorful displays wherever they go!
-            Their presence makes the environment more vibrant and joyful!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Bunnies create colorful displays wherever they go! Their presence makes the environment more vibrant and joyful!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Bunny combines the characteristics of bunnies with stunning 

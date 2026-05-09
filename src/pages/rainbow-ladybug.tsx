@@ -6,12 +6,7 @@ const RainbowLadybugPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐞 Rainbow Ladybug - Tiny Colorful Friend"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Ladybugs can create tiny rainbows when sunlight hits their
-            wings! A group of them in flight looks like a flying rainbow!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Ladybugs can create tiny rainbows when sunlight hits their wings! A group of them in flight looks like a flying rainbow!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Ladybug is an adorable tiny companion with a shell painted in all the 

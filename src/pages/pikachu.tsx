@@ -6,12 +6,7 @@ const PikachuPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="⚡ Pikachu - The Electric Mouse Pokemon"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ⚡ Fun Fact: A group of Pikachu can generate enough electricity to cause a
-            lightning storm! They communicate through electrical waves.
-          </p></>
-      }
+      funFact="⚡ Fun Fact: A group of Pikachu can generate enough electricity to cause a lightning storm! They communicate through electrical waves."
     >
       <p className="text-lg text-gray-700 mb-6">
               Pikachu is an adorable Electric-type Pokemon known for its bright yellow fur, 

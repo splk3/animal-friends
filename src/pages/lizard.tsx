@@ -6,12 +6,7 @@ const LizardPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦎 Lizards - Fascinating Reptile Companions"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Some lizards can drop their tails when threatened and grow them
-            back - it's called autotomy!
-          </p></>
-      }
+      funFact="💡 Did you know? Some lizards can drop their tails when threatened and grow them back - it's called autotomy!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Lizards are captivating reptiles that make unique and low-maintenance pets. 

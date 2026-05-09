@@ -6,12 +6,7 @@ const SealycornPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦭🦄 Sealycorn - Aquatic Unicorn Seal"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Magical Fact: Sealycorns can breathe underwater for up to 40 minutes! Their horn
-            leaves a trail of sparkles in the water, and they often play with dolphins and whales!
-          </p></>
-      }
+      funFact="✨ Magical Fact: Sealycorns can breathe underwater for up to 40 minutes! Their horn leaves a trail of sparkles in the water, and they often play with dolphins and whales!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Sealycorn is an enchanting blend of playful seal and magical unicorn. These 

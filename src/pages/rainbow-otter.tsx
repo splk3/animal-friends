@@ -6,12 +6,7 @@ const RainbowOtterPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🦦 Rainbow Otter - Playful Aquatic Colors"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Otters use rocks as tools and pass favorite rocks down through
-            families! They create mini rainbows every time they shake water off their fur!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Otters use rocks as tools and pass favorite rocks down through families! They create mini rainbows every time they shake water off their fur!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Otter combines the playful, adorable nature of otters with spectacular 

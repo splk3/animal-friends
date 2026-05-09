@@ -6,12 +6,7 @@ const LadyBugPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐞 Lady Bugs - Garden Guardians"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Lady bugs are considered symbols of good luck in many cultures!
-            They also taste terrible to predators, which is why they have such bright warning colors.
-          </p></>
-      }
+      funFact="💡 Did you know? Lady bugs are considered symbols of good luck in many cultures! They also taste terrible to predators, which is why they have such bright warning colors."
     >
       <p className="text-lg text-gray-700 mb-6">
               Lady bugs, also known as ladybirds or ladybird beetles, are delightful insects that 

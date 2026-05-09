@@ -6,12 +6,7 @@ const BunnyCornPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐰🦄 BunnyCorn - Hopping Magic"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🦄 Magical Fact: BunnyCorns can hop so high they briefly touch clouds! When they're
-            extremely happy, their horn sparkles and they leave glowing paw prints for hours!
-          </p></>
-      }
+      funFact="🦄 Magical Fact: BunnyCorns can hop so high they briefly touch clouds! When they're extremely happy, their horn sparkles and they leave glowing paw prints for hours!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The BunnyCorn is an absolutely adorable fusion of bunny cuteness and unicorn magic. 

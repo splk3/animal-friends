@@ -6,12 +6,7 @@ const MuppyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐶🏺 Muppy - Ancient Puppy Wrapped in Mystery"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: Muppies can understand all ancient languages! They sometimes bark in
-            hieroglyphics when excited. Their tail wags leave trails of golden dust!
-          </p></>
-      }
+      funFact="✨ Fun Fact: Muppies can understand all ancient languages! They sometimes bark in hieroglyphics when excited. Their tail wags leave trails of golden dust!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Muppy is an adorable mix of a mummy and a puppy - combining ancient Egyptian mystique 

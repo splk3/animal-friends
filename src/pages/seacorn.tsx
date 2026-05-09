@@ -6,12 +6,7 @@ const SeaCornPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦄🌊 SeaCorn - Ocean Unicorn Magic"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌊 Mythical Fact: When SeaCorns gallop across the ocean surface, they leave
-            bioluminescent hoofprints that glow for hours! Sailors consider them signs of good fortune.
-          </p></>
-      }
+      funFact="🌊 Mythical Fact: When SeaCorns gallop across the ocean surface, they leave bioluminescent hoofprints that glow for hours! Sailors consider them signs of good fortune."
     >
       <p className="text-lg text-gray-700 mb-6">
               The SeaCorn is a magnificent unicorn blessed with powerful ocean and sea magic. These 

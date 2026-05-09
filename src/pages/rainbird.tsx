@@ -6,12 +6,7 @@ const RainBirdPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐦☁️ RainBird - Blue Sky Shower"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ☁️ Fun Fact: RainBirds' song is most melodious during rainfall, and their clouds
-            produce micro-rainbows that shimmer around them as they fly!
-          </p></>
-      }
+      funFact="☁️ Fun Fact: RainBirds' song is most melodious during rainfall, and their clouds produce micro-rainbows that shimmer around them as they fly!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The RainBird is a beautiful blue bird that travels with its own personal rain cloud. 

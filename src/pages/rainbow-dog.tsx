@@ -6,12 +6,7 @@ const RainbowDogPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐕🌈 Rainbow Dog - Spectrum of Loyalty"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Dogs' tails create rainbow streaks in the air when they wag!
-            Their puppies inherit unique rainbow patterns making each one completely unique.
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Dogs' tails create rainbow streaks in the air when they wag! Their puppies inherit unique rainbow patterns making each one completely unique."
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Dog combines the unwavering loyalty and playful nature of dogs with stunning 

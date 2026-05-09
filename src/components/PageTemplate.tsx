@@ -3,7 +3,7 @@ import Layout from "./Layout"
 
 interface PageTemplateProps {
   pageTitle: string
-  funFact: React.ReactNode
+  funFact?: string
   children: React.ReactNode
 }
 
@@ -19,7 +19,9 @@ const PageTemplate: React.FC<PageTemplateProps> = ({ pageTitle, funFact, childre
 
         {funFact && (
           <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-            {funFact}
+            <p className="text-purple-700 font-semibold">
+              {funFact}
+            </p>
           </div>
         )}
       </div>

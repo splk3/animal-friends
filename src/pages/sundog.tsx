@@ -6,12 +6,7 @@ const SunDogPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐕☀️ SunDog - Radiant Warmth Companion"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ☀️ Fun Fact: SunDogs can photosynthesize a small amount of energy from sunlight, and
-            their presence helps houseplants grow faster. They're living sunshine!
-          </p></>
-      }
+      funFact="☀️ Fun Fact: SunDogs can photosynthesize a small amount of energy from sunlight, and their presence helps houseplants grow faster. They're living sunshine!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The SunDog is a remarkable canine companion that radiates light and warmth like the sun itself. 

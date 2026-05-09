@@ -6,12 +6,7 @@ const UnicornsPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦄 Unicorns - Pure and Magical"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Mythical Fact: Unicorn horns (called alicorns) were believed to have powerful
-            healing properties and could neutralize poison!
-          </p></>
-      }
+      funFact="✨ Mythical Fact: Unicorn horns (called alicorns) were believed to have powerful healing properties and could neutralize poison!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Unicorns are symbols of purity, grace, and magic. These elegant creatures with their 

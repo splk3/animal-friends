@@ -6,12 +6,7 @@ const RainbowFoxPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🦊 Rainbow Fox - Colorful Foxes"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Foxes create colorful displays wherever they go!
-            Their presence makes the environment more vibrant and joyful!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Foxes create colorful displays wherever they go! Their presence makes the environment more vibrant and joyful!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Fox combines the characteristics of foxes with stunning 

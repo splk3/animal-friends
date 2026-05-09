@@ -6,12 +6,7 @@ const CowPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐄 Cows - Gentle Giants"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Cows have best friends and can become stressed when separated from them.
-            They also have excellent memories and can recognize faces!
-          </p></>
-      }
+      funFact="💡 Did you know? Cows have best friends and can become stressed when separated from them. They also have excellent memories and can recognize faces!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Cows are gentle, intelligent animals that have been domesticated for thousands of years. 

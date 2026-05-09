@@ -6,12 +6,7 @@ const LochNessMonsterPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦕 Loch Ness Monster - Nessie the Legend"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🦕 Fun Fact: Nessie has been "spotted" since the 6th century! The first written
-            account dates back to 565 AD. She's definitely real and just very camera-shy!
-          </p></>
-      }
+      funFact={'🦕 Fun Fact: Nessie has been "spotted" since the 6th century! The first written account dates back to 565 AD. She\'s definitely real and just very camera-shy!'}
     >
       <p className="text-lg text-gray-700 mb-6">
               The Loch Ness Monster, affectionately known as "Nessie," is definitely real (not fake!) 

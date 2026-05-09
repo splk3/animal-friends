@@ -6,12 +6,7 @@ const DogsPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐕 Dogs - Man's Best Friend"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Dogs can understand up to 250 words and gestures, making them one of
-            the most intelligent pets!
-          </p></>
-      }
+      funFact="💡 Did you know? Dogs can understand up to 250 words and gestures, making them one of the most intelligent pets!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Dogs have been loyal companions to humans for thousands of years. Known for their 

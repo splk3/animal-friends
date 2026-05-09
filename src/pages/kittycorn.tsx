@@ -6,12 +6,7 @@ const KittyCornPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐱🦄 KittyCorn - Magical Feline Wonder"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: A KittyCorn's purr has healing properties and their horn can glow
-            in different colors based on their mood!
-          </p></>
-      }
+      funFact="✨ Fun Fact: A KittyCorn's purr has healing properties and their horn can glow in different colors based on their mood!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The KittyCorn combines the independent charm of a kitten with the magical wonder 

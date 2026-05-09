@@ -6,12 +6,7 @@ const RainbowCatPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐱🌈 Rainbow Cat - Prismatic Feline Beauty"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Cats purr in perfect harmony with all colors of their fur!
-            Their unique coloring is permanent and doesn't fade, passing down to their kittens.
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Cats purr in perfect harmony with all colors of their fur! Their unique coloring is permanent and doesn't fade, passing down to their kittens."
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Cat is a stunning feline with fur that displays beautiful rainbow colors. 

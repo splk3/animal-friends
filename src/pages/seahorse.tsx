@@ -6,12 +6,7 @@ const SeahorsePage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐴🌊 Seahorses - Enchanting Ocean Dancers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Seahorses are monogamous and perform elaborate daily greeting
-            dances with their partners!
-          </p></>
-      }
+      funFact="💡 Did you know? Seahorses are monogamous and perform elaborate daily greeting dances with their partners!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Seahorses are fascinating marine fish known for their unique appearance and behaviors. 

@@ -6,12 +6,7 @@ const AzurillPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="💧 Azurill - The Polka Dot Pokemon"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💧 Fun Fact: Azurill's tail can stretch and bounce up to twice its body height!
-            It uses its tail as a flotation device when tired from swimming.
-          </p></>
-      }
+      funFact="💧 Fun Fact: Azurill's tail can stretch and bounce up to twice its body height! It uses its tail as a flotation device when tired from swimming."
     >
       <p className="text-lg text-gray-700 mb-6">
               Azurill is an adorable Water and Normal-type Pokemon known for its large, 

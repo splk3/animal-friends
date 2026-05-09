@@ -6,12 +6,7 @@ const RabbitPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐰 Rabbits - Gentle Hoppers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Rabbits can jump 3 feet high and 10 feet long! They also do a happy
-            dance called a "binky" when they're excited.
-          </p></>
-      }
+      funFact={'💡 Did you know? Rabbits can jump 3 feet high and 10 feet long! They also do a happy dance called a "binky" when they\'re excited.'}
     >
       <p className="text-lg text-gray-700 mb-6">
               Rabbits are charming, social pets that make wonderful companions for dedicated owners. 

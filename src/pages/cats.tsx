@@ -6,12 +6,7 @@ const CatsPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐈 Cats - Independent Companions"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Cats spend 70% of their lives sleeping, which means a 9-year-old cat
-            has been awake for only three years of its life!
-          </p></>
-      }
+      funFact="💡 Did you know? Cats spend 70% of their lives sleeping, which means a 9-year-old cat has been awake for only three years of its life!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Cats are beloved for their independent nature, playful antics, and affectionate 

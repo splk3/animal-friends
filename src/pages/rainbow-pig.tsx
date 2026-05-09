@@ -6,12 +6,7 @@ const RainbowPigPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐷🌈 Rainbow Pig - Colorful Intelligent Friends"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Pigs are just as smart as regular pigs (smarter than dogs!), and
-            their rainbow colors shift slightly when they're happy or excited!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Pigs are just as smart as regular pigs (smarter than dogs!), and their rainbow colors shift slightly when they're happy or excited!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Pig is an intelligent, social animal with skin or fur displaying beautiful 

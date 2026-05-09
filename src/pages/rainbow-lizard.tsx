@@ -6,12 +6,7 @@ const RainbowLizardPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦎🌈 Rainbow Lizard - Colorful Scale Magic"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Lizards' colors become more vibrant when they're happy and healthy!
-            They're also excellent climbers and love to show off their colors in the sun.
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Lizards' colors become more vibrant when they're happy and healthy! They're also excellent climbers and love to show off their colors in the sun."
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Lizard is a stunning reptile that displays vibrant rainbow colors across its scales. 

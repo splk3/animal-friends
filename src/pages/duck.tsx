@@ -6,12 +6,7 @@ const DuckPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦆 Ducks - Charming Water Birds"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Ducks are omnivores and excellent natural pest controllers, happily
-            eating slugs, snails, and insects from your garden!
-          </p></>
-      }
+      funFact="💡 Did you know? Ducks are omnivores and excellent natural pest controllers, happily eating slugs, snails, and insects from your garden!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Ducks make delightful and entertaining pets with their playful personalities and 

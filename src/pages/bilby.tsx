@@ -6,12 +6,7 @@ const BilbyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐰 Bilbies - Australia's Easter Bunny"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Bilby burrows can be used by over 45 other species, making them
-            "ecosystem engineers" in the Australian desert!
-          </p></>
-      }
+      funFact={'💡 Did you know? Bilby burrows can be used by over 45 other species, making them "ecosystem engineers" in the Australian desert!'}
     >
       <p className="text-lg text-gray-700 mb-6">
               Bilbies are adorable Australian marsupials with long ears and silky fur. Often called 

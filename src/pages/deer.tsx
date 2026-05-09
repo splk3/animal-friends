@@ -6,12 +6,7 @@ const DeerPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦌 Deer - Graceful Forest Dwellers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Deer have excellent night vision and can see ultraviolet light,
-            helping them spot predators and find food in low light!
-          </p></>
-      }
+      funFact="💡 Did you know? Deer have excellent night vision and can see ultraviolet light, helping them spot predators and find food in low light!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Deer are elegant wild animals known for their grace, beauty, and distinctive antlers. 

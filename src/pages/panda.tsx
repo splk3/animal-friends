@@ -6,12 +6,7 @@ const PandaPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐼 Pandas - Adorable Bamboo Lovers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Pandas have a special "thumb" - actually an enlarged wrist bone -
-            that helps them grip bamboo stalks!
-          </p></>
-      }
+      funFact={'💡 Did you know? Pandas have a special "thumb" - actually an enlarged wrist bone - that helps them grip bamboo stalks!'}
     >
       <p className="text-lg text-gray-700 mb-6">
               Giant pandas are beloved icons of wildlife conservation. While they're wild animals 

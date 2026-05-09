@@ -6,12 +6,7 @@ const RainbowDolphinPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐬 Rainbow Dolphin - Spectrum of the Sea"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Dolphins can create actual mini rainbows with their splash!
-            When they swim in groups, they create a moving rainbow wave in the ocean!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Dolphins can create actual mini rainbows with their splash! When they swim in groups, they create a moving rainbow wave in the ocean!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Dolphin combines the intelligence and playfulness of dolphins with stunning 

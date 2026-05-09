@@ -6,12 +6,7 @@ const UniPupPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦄🐶 UniPup - Magical Puppy Companion"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: UniPups can sense when their owners are sad and will nuzzle them with their
-            horn, which has mild healing properties that boost happiness!
-          </p></>
-      }
+      funFact="✨ Fun Fact: UniPups can sense when their owners are sad and will nuzzle them with their horn, which has mild healing properties that boost happiness!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The UniPup is a delightful fusion of a loyal puppy and the mystical magic of a unicorn. 

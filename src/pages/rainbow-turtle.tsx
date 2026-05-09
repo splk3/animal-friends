@@ -6,12 +6,7 @@ const RainbowTurtlePage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐢 Rainbow Turtle - Slow and Colorful"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Turtles' shells grow more beautiful with age! Older turtles
-            have the most vivid, deep rainbow colors. Some live over 100 years!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Turtles' shells grow more beautiful with age! Older turtles have the most vivid, deep rainbow colors. Some live over 100 years!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Turtle is a gentle companion with a shell painted in all the colors of 

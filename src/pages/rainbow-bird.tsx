@@ -6,12 +6,7 @@ const RainbowBirdPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐦🌈 Rainbow Bird - Colorful Wings of Joy"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Birds sing in different tones that correspond to their feather colors!
-            Their songs create a beautiful, harmonious melody that sounds like happiness itself.
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Birds sing in different tones that correspond to their feather colors! Their songs create a beautiful, harmonious melody that sounds like happiness itself."
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Bird is a spectacular avian companion with feathers displaying all the colors 

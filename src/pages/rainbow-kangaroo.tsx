@@ -6,12 +6,7 @@ const RainbowKangarooPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🦘 Rainbow Kangaroo - Colorful Kangaroos"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Kangaroos create colorful displays wherever they go!
-            Their presence makes the environment more vibrant and joyful!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Kangaroos create colorful displays wherever they go! Their presence makes the environment more vibrant and joyful!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Kangaroo combines the characteristics of kangaroos with stunning 

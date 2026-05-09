@@ -6,12 +6,7 @@ const SunBugPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐞☀️ SunBug - Sparkly Solar Ladybug"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ☀️ Fun Fact: SunBugs can produce tiny sparkle bursts when happy, creating miniature
-            firework displays in your garden! Their glow is brightest when they find aphids to eat.
-          </p></>
-      }
+      funFact="☀️ Fun Fact: SunBugs can produce tiny sparkle bursts when happy, creating miniature firework displays in your garden! Their glow is brightest when they find aphids to eat."
     >
       <p className="text-lg text-gray-700 mb-6">
               The SunBug is a magical ladybug variety that sparkles and shines like the sun itself. 

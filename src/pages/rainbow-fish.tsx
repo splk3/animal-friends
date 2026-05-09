@@ -6,12 +6,7 @@ const RainbowFishPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐠 Rainbow Fish - Aquarium Spectrum"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Fish can see ultraviolet light! Their scales contain special
-            crystals that create the rainbow effect. Schools move in perfect rainbow harmony!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Fish can see ultraviolet light! Their scales contain special crystals that create the rainbow effect. Schools move in perfect rainbow harmony!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Fish brings spectacular color to any aquarium with scales that shimmer 

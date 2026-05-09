@@ -6,12 +6,7 @@ const RainPupPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐶☁️ RainPup - Rainy Day Companion"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ☁️ Fun Fact: RainPups' clouds can produce tiny rainbows on sunny days! Their rain is
-            always the perfect temperature and helps gardens flourish wherever they play.
-          </p></>
-      }
+      funFact="☁️ Fun Fact: RainPups' clouds can produce tiny rainbows on sunny days! Their rain is always the perfect temperature and helps gardens flourish wherever they play."
     >
       <p className="text-lg text-gray-700 mb-6">
               The RainPup is a unique puppy who brings their own personal rain cloud wherever they go. 

@@ -6,12 +6,7 @@ const SunBirdPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐦☀️ SunBird - Radiant Feathered Light"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ☀️ Fun Fact: SunBirds can boost the growth of nearby plants with their radiant energy,
-            and their feathers naturally repel darkness, making them natural nightlights!
-          </p></>
-      }
+      funFact="☀️ Fun Fact: SunBirds can boost the growth of nearby plants with their radiant energy, and their feathers naturally repel darkness, making them natural nightlights!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The SunBird is a magnificent avian companion that radiates warmth and light like a miniature sun. 

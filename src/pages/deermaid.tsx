@@ -6,12 +6,7 @@ const DeerMaidPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦌🧜‍♀️ DeerMaid - Forest and Sea United"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Magical Fact: DeerMaids can call forest animals and sea creatures simultaneously!
-            Their antlers grow coral and flowers at the same time, creating stunning natural crowns!
-          </p></>
-      }
+      funFact="✨ Magical Fact: DeerMaids can call forest animals and sea creatures simultaneously! Their antlers grow coral and flowers at the same time, creating stunning natural crowns!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The DeerMaid is a graceful fusion of deer elegance and mermaid mystique. These 

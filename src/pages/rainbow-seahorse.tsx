@@ -6,12 +6,7 @@ const RainbowSeahorsePage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐴🌊 Rainbow Seahorse - Colorful Seahorses"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Seahorses create colorful displays wherever they go!
-            Their presence makes the environment more vibrant and joyful!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Seahorses create colorful displays wherever they go! Their presence makes the environment more vibrant and joyful!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Seahorse combines the characteristics of seahorses with stunning 

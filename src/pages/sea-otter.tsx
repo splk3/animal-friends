@@ -6,12 +6,7 @@ const SeaOtterPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦦 Sea Otters - Adorable Ocean Engineers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Sea otters hold hands while sleeping to keep from drifting apart -
-            it's one of the cutest behaviors in the animal kingdom!
-          </p></>
-      }
+      funFact="💡 Did you know? Sea otters hold hands while sleeping to keep from drifting apart - it's one of the cutest behaviors in the animal kingdom!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Sea otters are charismatic marine mammals known for their playful behavior, 

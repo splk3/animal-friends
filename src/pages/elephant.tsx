@@ -6,12 +6,7 @@ const ElephantPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐘 Elephants - Majestic Giants"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Elephants are pregnant for 22 months - the longest gestation period
-            of any mammal!
-          </p></>
-      }
+      funFact="💡 Did you know? Elephants are pregnant for 22 months - the longest gestation period of any mammal!"
     >
       <p className="text-lg text-gray-700 mb-6">
               While elephants aren't traditional pets (they're magnificent wild animals!), learning about 

@@ -6,12 +6,7 @@ const DragonsPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐉 Dragons - Majestic Fire Breathers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Mythical Fact: In many legends, dragons can live for thousands of years and
-            accumulate vast wisdom and magical knowledge!
-          </p></>
-      }
+      funFact="✨ Mythical Fact: In many legends, dragons can live for thousands of years and accumulate vast wisdom and magical knowledge!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Dragons are legendary creatures known for their intelligence, power, and magical 

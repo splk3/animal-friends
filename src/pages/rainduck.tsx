@@ -6,12 +6,7 @@ const RainDuckPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦆☁️ RainDuck - Swimming in Showers"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ☁️ Fun Fact: RainDucks quack differently when it's raining - they create a melodious,
-            echo-like sound that harmonizes with the rainfall. They're nature's rainy day orchestra!
-          </p></>
-      }
+      funFact="☁️ Fun Fact: RainDucks quack differently when it's raining - they create a melodious, echo-like sound that harmonizes with the rainfall. They're nature's rainy day orchestra!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The RainDuck is a delightful waterfowl that loves swimming in the rain - which is quite 

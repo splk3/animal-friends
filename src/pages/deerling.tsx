@@ -6,12 +6,7 @@ const DeerlingPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦌 Deerling - The Season Pokemon"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌿 Fun Fact: Deerling's body temperature changes with the seasons! It can sense
-            seasonal changes before they happen and prepare accordingly.
-          </p></>
-      }
+      funFact="🌿 Fun Fact: Deerling's body temperature changes with the seasons! It can sense seasonal changes before they happen and prepare accordingly."
     >
       <p className="text-lg text-gray-700 mb-6">
               Deerling is a charming Grass and Normal-type Pokemon that resembles a small deer. 

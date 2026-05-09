@@ -6,12 +6,7 @@ const MerCatPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐱🧜‍♀️ MerCat - Aquatic Feline Magic"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: MerCats can purr both on land and underwater, creating beautiful musical
-            bubbles when swimming. They're also known to befriend fish!
-          </p></>
-      }
+      funFact="✨ Fun Fact: MerCats can purr both on land and underwater, creating beautiful musical bubbles when swimming. They're also known to befriend fish!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The MerCat is a captivating blend of a curious cat and the graceful elegance of a mermaid. 

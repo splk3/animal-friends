@@ -6,12 +6,7 @@ const BearPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐻 Bears - Powerful Wild Mammals"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Bears have an incredible sense of smell - up to 2,000 times better
-            than humans! They can smell food from miles away.
-          </p></>
-      }
+      funFact="💡 Did you know? Bears have an incredible sense of smell - up to 2,000 times better than humans! They can smell food from miles away."
     >
       <p className="text-lg text-gray-700 mb-6">
               Bears are powerful, intelligent wild animals that should never be kept as pets. 

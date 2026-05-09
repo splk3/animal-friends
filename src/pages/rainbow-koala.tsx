@@ -6,12 +6,7 @@ const RainbowKoalaPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🐨 Rainbow Koala - Colorful Koalas"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Koalas create colorful displays wherever they go!
-            Their presence makes the environment more vibrant and joyful!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Koalas create colorful displays wherever they go! Their presence makes the environment more vibrant and joyful!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Koala combines the characteristics of koalas with stunning 

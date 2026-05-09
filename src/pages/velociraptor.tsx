@@ -6,12 +6,7 @@ const VelociraptorPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦖 Velociraptor - Clever Hunters"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Prehistoric Fact: Real Velociraptors were much smaller than portrayed in Jurassic
-            Park - the movie versions were actually based on the larger Deinonychus!
-          </p></>
-      }
+      funFact="✨ Prehistoric Fact: Real Velociraptors were much smaller than portrayed in Jurassic Park - the movie versions were actually based on the larger Deinonychus!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Velociraptors were small but fierce carnivorous dinosaurs known for their 

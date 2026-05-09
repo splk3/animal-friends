@@ -6,12 +6,7 @@ const RainbowDuckPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦆🌈 Rainbow Duck - Prismatic Waterfowl"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Ducks create colorful ripples on water when they swim! Their
-            feathers are water-resistant like regular ducks, making their rainbow colors permanent.
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Ducks create colorful ripples on water when they swim! Their feathers are water-resistant like regular ducks, making their rainbow colors permanent."
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Duck is a delightful waterfowl with feathers displaying vibrant rainbow colors. 

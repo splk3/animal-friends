@@ -6,12 +6,7 @@ const PigPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐷 Pigs - Intelligent Farm Friends"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Pigs are smarter than dogs and 3-year-old children, capable of
-            playing video games and solving complex puzzles!
-          </p></>
-      }
+      funFact="💡 Did you know? Pigs are smarter than dogs and 3-year-old children, capable of playing video games and solving complex puzzles!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Pigs are highly intelligent, social animals that have become increasingly popular 

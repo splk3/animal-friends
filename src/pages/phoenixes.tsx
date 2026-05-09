@@ -6,12 +6,7 @@ const PhoenixesPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🔥 Phoenixes - Eternal Flames of Rebirth"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Mythical Fact: Phoenix tears have powerful healing properties and can cure any
-            wound or illness!
-          </p></>
-      }
+      funFact="✨ Mythical Fact: Phoenix tears have powerful healing properties and can cure any wound or illness!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Phoenix is a magnificent bird of flame and rebirth, known for its ability to 

@@ -6,12 +6,7 @@ const MeralaPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🧜‍♀️🐨 Merala - Aquatic Koala Hybrid"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🐨 Fun Fact: Meralas can hold their breath for up to 30 minutes! They often nap
-            while floating on their backs, holding eucalyptus leaves on their bellies like sea otters!
-          </p></>
-      }
+      funFact="🐨 Fun Fact: Meralas can hold their breath for up to 30 minutes! They often nap while floating on their backs, holding eucalyptus leaves on their bellies like sea otters!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Merala is an enchanting blend of mermaid grace and koala cuteness. These adorable 

@@ -6,12 +6,7 @@ const KangarooPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦘 Kangaroos - Hopping Icons of Australia"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Kangaroos can't walk backwards, which is why they appear on the
-            Australian coat of arms - symbolizing moving forward!
-          </p></>
-      }
+      funFact="💡 Did you know? Kangaroos can't walk backwards, which is why they appear on the Australian coat of arms - symbolizing moving forward!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Kangaroos are iconic Australian marsupials famous for their powerful hind legs and 

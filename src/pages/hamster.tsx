@@ -6,12 +6,7 @@ const HamsterPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐹 Hamsters - Adorable Pocket Pets"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Hamsters can run up to 5 miles per night on their wheel - that's
-            impressive for such tiny creatures!
-          </p></>
-      }
+      funFact="💡 Did you know? Hamsters can run up to 5 miles per night on their wheel - that's impressive for such tiny creatures!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Hamsters are small, furry rodents that make delightful pets. Known for their 

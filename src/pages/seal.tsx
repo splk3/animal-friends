@@ -6,12 +6,7 @@ const SealPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦭 Seals - Playful Marine Mammals"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Seals can sleep underwater and automatically come up for air
-            without waking up!
-          </p></>
-      }
+      funFact="💡 Did you know? Seals can sleep underwater and automatically come up for air without waking up!"
     >
       <p className="text-lg text-gray-700 mb-6">
               While seals aren't traditional pets (they're wild marine mammals!), learning about 

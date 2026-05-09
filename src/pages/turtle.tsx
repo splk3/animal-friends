@@ -6,12 +6,7 @@ const TurtlePage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐢 Turtles - Ancient Shelled Companions"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Some turtles can live over 100 years, making them pets that can be
-            passed down through generations!
-          </p></>
-      }
+      funFact="💡 Did you know? Some turtles can live over 100 years, making them pets that can be passed down through generations!"
     >
       <p className="text-lg text-gray-700 mb-6">
               Turtles are reptiles with protective shells that have existed for over 200 million 

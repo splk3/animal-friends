@@ -6,12 +6,7 @@ const ButterflyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦋 Butterflies - Wings of Wonder"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            💡 Did you know? Butterflies taste with their feet! They have taste receptors on their legs
-            that help them identify plants for laying eggs.
-          </p></>
-      }
+      funFact="💡 Did you know? Butterflies taste with their feet! They have taste receptors on their legs that help them identify plants for laying eggs."
     >
       <p className="text-lg text-gray-700 mb-6">
               Butterflies are enchanting creatures that bring beauty and magic to any garden. 

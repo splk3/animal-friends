@@ -6,12 +6,7 @@ const RainbowButterflyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🌈🦋 Rainbow Butterfly - Wings of Spectrum"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Butterflies can taste with their feet! When they land on flowers,
-            they know immediately if the nectar is sweet enough. Their wings never fade!
-          </p></>
-      }
+      funFact="🌈 Fun Fact: Rainbow Butterflies can taste with their feet! When they land on flowers, they know immediately if the nectar is sweet enough. Their wings never fade!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The Rainbow Butterfly showcases nature's most spectacular colors on delicate wings. 

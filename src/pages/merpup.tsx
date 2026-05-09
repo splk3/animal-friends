@@ -6,12 +6,7 @@ const MerPupPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🐶🧜‍♀️ MerPup - Aquatic Puppy Magic"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: MerPups can hold their breath for up to 30 minutes and communicate
-            using both barks and melodic underwater songs!
-          </p></>
-      }
+      funFact="✨ Fun Fact: MerPups can hold their breath for up to 30 minutes and communicate using both barks and melodic underwater songs!"
     >
       <p className="text-lg text-gray-700 mb-6">
               The MerPup is an enchanting blend of a loyal puppy and the mystical grace of a 

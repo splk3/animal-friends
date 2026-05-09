@@ -6,12 +6,7 @@ const SunButterflyPage: React.FC = () => {
   return (
     <PageTemplate
       pageTitle="🦋☀️ SunButterfly - Glittering Wings of Light"
-      funFact={
-        <><p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: SunButterfly glitter trails create natural pathways of light that other
-            pollinators follow! They're like living fairy dust makers, spreading joy and sparkle everywhere.
-          </p></>
-      }
+      funFact="✨ Fun Fact: SunButterfly glitter trails create natural pathways of light that other pollinators follow! They're like living fairy dust makers, spreading joy and sparkle everywhere."
     >
       <p className="text-lg text-gray-700 mb-6">
               The SunButterfly is a magnificent butterfly that drops sparkly sunshine glitter as it flies, 
