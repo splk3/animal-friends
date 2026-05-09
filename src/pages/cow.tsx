@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const CowPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐄 Cows - Gentle Giants" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐄 Cows - Gentle Giants"
+      funFact="💡 Did you know? Cows have best friends and can become stressed when separated from them. They also have excellent memories and can recognize faces!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Cows are gentle, intelligent animals that have been domesticated for thousands of years. 
               While traditionally farm animals, miniature cows have become increasingly popular as pets 
               for those with adequate land and resources.
@@ -85,17 +85,7 @@ const CowPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Cows have best friends and can become stressed when separated from them. 
-            They also have excellent memories and can recognize faces!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

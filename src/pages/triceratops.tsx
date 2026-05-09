@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const TriceratopsPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦕 Triceratops - Three-Horned Giants" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦕 Triceratops - Three-Horned Giants"
+      funFact={'✨ Prehistoric Fact: Triceratops means "three-horned face" in Greek, and they lived alongside T. rex 68-66 million years ago!'}
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Triceratops were magnificent herbivorous dinosaurs that lived during the Late 
               Cretaceous period. With their distinctive three horns and large frill, they're one 
               of the most recognizable prehistoric creatures - and would make impressive (if 
@@ -86,17 +86,7 @@ const TriceratopsPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Prehistoric Fact: Triceratops means "three-horned face" in Greek, and they lived 
-            alongside T. rex 68-66 million years ago!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

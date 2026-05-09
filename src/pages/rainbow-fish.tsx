@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowFishPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐠 Rainbow Fish - Aquarium Spectrum" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🐠 Rainbow Fish - Aquarium Spectrum"
+      funFact="🌈 Fun Fact: Rainbow Fish can see ultraviolet light! Their scales contain special crystals that create the rainbow effect. Schools move in perfect rainbow harmony!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Fish brings spectacular color to any aquarium with scales that shimmer 
               in all rainbow hues. These peaceful freshwater fish are perfect for community tanks, 
               adding living rainbows to your underwater world!
@@ -89,17 +89,7 @@ const RainbowFishPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Fish can see ultraviolet light! Their scales contain special 
-            crystals that create the rainbow effect. Schools move in perfect rainbow harmony!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

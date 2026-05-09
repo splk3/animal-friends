@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const MerPupPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐶🧜‍♀️ MerPup - Aquatic Puppy Magic" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐶🧜‍♀️ MerPup - Aquatic Puppy Magic"
+      funFact="✨ Fun Fact: MerPups can hold their breath for up to 30 minutes and communicate using both barks and melodic underwater songs!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The MerPup is an enchanting blend of a loyal puppy and the mystical grace of a 
               mermaid. These adorable aquatic companions bring the best of land and sea together, 
               offering playful energy above water and elegant swimming below the waves.
@@ -89,17 +89,7 @@ const MerPupPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Fun Fact: MerPups can hold their breath for up to 30 minutes and communicate 
-            using both barks and melodic underwater songs!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 
