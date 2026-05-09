@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const BilbyPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐰 Bilbies - Australia's Easter Bunny" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐰 Bilbies - Australia's Easter Bunny"
+      funFact={'💡 Did you know? Bilby burrows can be used by over 45 other species, making them "ecosystem engineers" in the Australian desert!'}
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Bilbies are adorable Australian marsupials with long ears and silky fur. Often called 
               "rabbit-eared bandicoots," these nocturnal creatures are an important part of Australia's 
               ecosystem and a symbol of conservation efforts.
@@ -89,17 +89,7 @@ const BilbyPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Bilby burrows can be used by over 45 other species, making them 
-            "ecosystem engineers" in the Australian desert!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

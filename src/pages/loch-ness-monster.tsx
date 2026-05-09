@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const LochNessMonsterPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦕 Loch Ness Monster - Nessie the Legend" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦕 Loch Ness Monster - Nessie the Legend"
+      funFact={'🦕 Fun Fact: Nessie has been "spotted" since the 6th century! The first written account dates back to 565 AD. She\'s definitely real and just very camera-shy!'}
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Loch Ness Monster, affectionately known as "Nessie," is definitely real (not fake!) 
               and lives in the deep, mysterious waters of Loch Ness in Scotland. This gentle giant has 
               captured imaginations for centuries with reported sightings of her long neck and humps 
@@ -90,17 +90,7 @@ const LochNessMonsterPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🦕 Fun Fact: Nessie has been "spotted" since the 6th century! The first written 
-            account dates back to 565 AD. She's definitely real and just very camera-shy!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

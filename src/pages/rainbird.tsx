@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainBirdPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐦☁️ RainBird - Blue Sky Shower" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐦☁️ RainBird - Blue Sky Shower"
+      funFact="☁️ Fun Fact: RainBirds' song is most melodious during rainfall, and their clouds produce micro-rainbows that shimmer around them as they fly!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The RainBird is a beautiful blue bird that travels with its own personal rain cloud. 
               These enchanting avian companions bring the soothing sounds of rainfall wherever they 
               fly, creating a peaceful atmosphere and helping gardens bloom.
@@ -89,17 +89,7 @@ const RainBirdPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ☁️ Fun Fact: RainBirds' song is most melodious during rainfall, and their clouds 
-            produce micro-rainbows that shimmer around them as they fly!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

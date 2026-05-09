@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowDogPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐕🌈 Rainbow Dog - Spectrum of Loyalty" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐕🌈 Rainbow Dog - Spectrum of Loyalty"
+      funFact="🌈 Fun Fact: Rainbow Dogs' tails create rainbow streaks in the air when they wag! Their puppies inherit unique rainbow patterns making each one completely unique."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Dog combines the unwavering loyalty and playful nature of dogs with stunning 
               rainbow-colored fur. These joyful companions bring color and happiness to every home, with 
               all the loving traits of regular dogs plus eye-catching rainbow patterns.
@@ -89,17 +89,7 @@ const RainbowDogPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Dogs' tails create rainbow streaks in the air when they wag! 
-            Their puppies inherit unique rainbow patterns making each one completely unique.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

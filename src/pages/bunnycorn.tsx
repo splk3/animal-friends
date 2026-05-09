@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const BunnyCornPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐰🦄 BunnyCorn - Hopping Magic" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐰🦄 BunnyCorn - Hopping Magic"
+      funFact="🦄 Magical Fact: BunnyCorns can hop so high they briefly touch clouds! When they're extremely happy, their horn sparkles and they leave glowing paw prints for hours!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The BunnyCorn is an absolutely adorable fusion of bunny cuteness and unicorn magic. 
               These fluffy friends have a spiraled horn on their forehead, can hop incredible 
               distances, and spread joy wherever they bounce. They're as gentle as rabbits with 
@@ -90,17 +90,7 @@ const BunnyCornPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🦄 Magical Fact: BunnyCorns can hop so high they briefly touch clouds! When they're 
-            extremely happy, their horn sparkles and they leave glowing paw prints for hours!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

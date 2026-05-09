@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const FoxPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦊 Foxes - Clever and Wild" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦊 Foxes - Clever and Wild"
+      funFact="💡 Did you know? Foxes use their fluffy tails as a warm blanket in cold weather and for balance when running!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Foxes are intelligent, adaptable wild animals known for their cunning nature and 
               beautiful fur. While wild foxes should never be kept as pets, domesticated fox 
               programs exist. Learning about foxes helps us appreciate these remarkable canines.
@@ -89,17 +89,7 @@ const FoxPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Foxes use their fluffy tails as a warm blanket in cold weather and 
-            for balance when running!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

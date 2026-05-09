@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainDuckPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦆☁️ RainDuck - Swimming in Showers" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦆☁️ RainDuck - Swimming in Showers"
+      funFact="☁️ Fun Fact: RainDucks quack differently when it's raining - they create a melodious, echo-like sound that harmonizes with the rainfall. They're nature's rainy day orchestra!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The RainDuck is a delightful waterfowl that loves swimming in the rain - which is quite 
               fortunate since they bring their own personal rain cloud everywhere they go! These charming 
               ducks are perfect for water lovers and those who enjoy the peaceful patter of rainfall.
@@ -89,17 +89,7 @@ const RainDuckPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ☁️ Fun Fact: RainDucks quack differently when it's raining - they create a melodious, 
-            echo-like sound that harmonizes with the rainfall. They're nature's rainy day orchestra!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

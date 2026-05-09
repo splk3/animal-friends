@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainPupPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐶☁️ RainPup - Rainy Day Companion" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐶☁️ RainPup - Rainy Day Companion"
+      funFact="☁️ Fun Fact: RainPups' clouds can produce tiny rainbows on sunny days! Their rain is always the perfect temperature and helps gardens flourish wherever they play."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The RainPup is a unique puppy who brings their own personal rain cloud wherever they go. 
               These adorable companions love rainy weather and are perfect for those who enjoy the 
               soothing sound of rainfall and playing in puddles.
@@ -89,17 +89,7 @@ const RainPupPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ☁️ Fun Fact: RainPups' clouds can produce tiny rainbows on sunny days! Their rain is 
-            always the perfect temperature and helps gardens flourish wherever they play.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 
