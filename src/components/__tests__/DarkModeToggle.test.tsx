@@ -5,7 +5,7 @@ import DarkModeToggle from '../DarkModeToggle'
 import { renderToString } from 'react-dom/server'
 
 describe('DarkModeToggle', () => {
-  let mockMatchMedia: any
+  let mockMatchMedia: ReturnType<typeof vi.fn>
 
   beforeEach(() => {
     // Reset localStorage
