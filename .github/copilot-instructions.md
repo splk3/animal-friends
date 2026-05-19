@@ -47,3 +47,46 @@ Linting:
 - Also update homepage links in `src/pages/index.tsx` when relevant: homepage sections are manually hardcoded and are not generated from `navigationData`.
 - Navigation link objects should follow `{ to: "/route", label: "Label" }` and be placed in the correct dropdown id (`real`, `mythical`, `mixed`, `rainbow`, `pokemon`).
 - Jest tests rely on Gatsby API mocks in `__mocks__/gatsby.js` (`Link`, `graphql`, `useStaticQuery`); keep these in sync with test needs.
+
+## MCP server setup guidance
+
+- Recommended MCP servers for this repository:
+  - **Playwright MCP**: use for validating navigation flows and desktop/mobile menu behavior after UI changes.
+  - **GitHub MCP**: use for checking PR metadata, CI runs, workflow logs, and related repository context.
+- For UI changes, prefer a short Playwright smoke flow:
+  - Open `/`
+  - Verify top-nav dropdowns render and links are reachable
+  - Verify mobile menu toggle and dropdown expansion behavior
+- Keep MCP checks focused on changed surfaces (for example, nav components and affected pages) instead of broad full-site traversal.
+
+Example MCP config snippet (adapt to your machine and token sources):
+
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    }
+  }
+}
+```
+
+- Put this into your Copilot/MCP client config file.
+- Ensure `GITHUB_PERSONAL_ACCESS_TOKEN` is exported in your shell (or replace with your client's secret mechanism).
+
+## LSP guidance
+
+- Use TypeScript/TSX language-server features first for symbol lookup and references in `src/components`, `src/pages`, and `src/data`.
+- Prefer rename/refactor through LSP when changing:
+  - `NavigationDropdown` / `DropdownLink` types
+  - Shared component props (`Layout`, `PageTemplate`, dropdown components)
+- When updating routes or labels, use LSP/find-references from `navigationData.ts` to catch all usage sites (layout rendering, dropdown props, tests, and page imports where applicable).
+- Use diagnostics as a fast gate after edits in TS/TSX files, then run `npm run test` / `npm run build`.
