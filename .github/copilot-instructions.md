@@ -39,14 +39,15 @@ Linting:
 
 ## Key conventions for this codebase
 
-- Import React as `import * as React from "react"` in components/pages.
-- Pages export a `Head` typed with Gatsby `HeadFC` for document titles.
-- Keep page filenames kebab-case (`sea-otter.tsx`) so route path matches file name (`/sea-otter`).
-- For new animal pages, use `PageTemplate` and follow existing content structure (title, sections/cards, optional fun fact).
-- Update `src/data/navigationData.ts` whenever adding/removing/renaming animal routes. Navigation dropdowns are driven from this file.
-- Also update homepage links in `src/pages/index.tsx` when relevant: homepage sections are manually hardcoded and are not generated from `navigationData`.
-- Navigation link objects should follow `{ to: "/route", label: "Label" }` and be placed in the correct dropdown id (`real`, `mythical`, `mixed`, `rainbow`, `pokemon`).
-- Jest tests rely on Gatsby API mocks in `__mocks__/gatsby.js` (`Link`, `graphql`, `useStaticQuery`); keep these in sync with test needs.
+- Import React as 'import * as React from "react"' in components/pages.
+- Pages export a 'Head' typed with Gatsby 'HeadFC' for document titles.
+- Keep page filenames kebab-case ('sea-otter.tsx') so route path matches file name ('/sea-otter').
+- Styling: Use the pink/purple gradient theme (pink-500, purple-500) and standard card styles (bg-white, rounded-lg, shadow-lg).
+- For new animal pages, use 'PageTemplate' and follow existing content structure (title, sections/cards, optional fun fact).
+- Update 'src/data/navigationData.ts' whenever adding/removing/renaming animal routes. Navigation dropdowns are driven from this file.
+- Also update homepage links in 'src/pages/index.tsx' when relevant: homepage sections are manually hardcoded and are not generated from 'navigationData'.
+- Navigation link objects should follow { to: "/route", label: "Label" } and be placed in the correct dropdown id (real, mythical, mixed, rainbow, pokemon).
+- Jest tests rely on Gatsby API mocks in '__mocks__/gatsby.js' (Link, graphql, useStaticQuery); keep these in sync with test needs.
 
 ## MCP server setup guidance
 
