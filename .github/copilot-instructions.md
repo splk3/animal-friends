@@ -89,4 +89,10 @@ Example MCP config snippet (adapt to your machine and token sources):
   - `NavigationDropdown` / `DropdownLink` types
   - Shared component props (`Layout`, `PageTemplate`, dropdown components)
 - When updating routes or labels, use LSP/find-references from `navigationData.ts` to catch all usage sites (layout rendering, dropdown props, tests, and page imports where applicable).
-- Use diagnostics as a fast gate after edits in TS/TSX files, then run `npm run test` / `npm run build`.
+- Use diagnostics as a fast gate after edits in TS/TSX files, then run npm run test / npm run build.
+
+## Security Guidelines
+
+- Never commit secrets, API keys, or credentials to the repository.
+- Do not commit build artifacts (public/, .cache/) or node_modules/.
+- Review all generated code to ensure no sensitive data or insecure patterns are introduced.
