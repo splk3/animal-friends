@@ -20,7 +20,7 @@ A fun and colorful website about animals that make good pets, featuring real-wor
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js >=24 <25 (24 LTS)
 - npm or yarn
 
 ### Installation
@@ -137,7 +137,7 @@ The site includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) tha
 ### Type Definitions
 - @types/react 18.3.27
 - @types/react-dom 18.3.7
-- @types/node 25.0.3
+- @types/node 24.12.4
 
 ## 📄 License
 
