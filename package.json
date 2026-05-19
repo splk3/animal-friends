@@ -9,7 +9,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "vitest run"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
