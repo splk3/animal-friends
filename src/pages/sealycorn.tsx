@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const SealycornPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦭🦄 Sealycorn - Aquatic Unicorn Seal" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦭🦄 Sealycorn - Aquatic Unicorn Seal"
+      funFact="✨ Magical Fact: Sealycorns can breathe underwater for up to 40 minutes! Their horn leaves a trail of sparkles in the water, and they often play with dolphins and whales!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Sealycorn is an enchanting blend of playful seal and magical unicorn. These 
               aquatic wonders have a seal's sleek body with a spiraled horn on their forehead, 
               combining marine mammal charm with unicorn magic. They're excellent swimmers who 
@@ -90,17 +90,7 @@ const SealycornPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ✨ Magical Fact: Sealycorns can breathe underwater for up to 40 minutes! Their horn 
-            leaves a trail of sparkles in the water, and they often play with dolphins and whales!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

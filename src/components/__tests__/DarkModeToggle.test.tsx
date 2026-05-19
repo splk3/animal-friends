@@ -1,11 +1,10 @@
 import * as React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest'
 import DarkModeToggle from '../DarkModeToggle'
 import { renderToString } from 'react-dom/server'
 
 describe('DarkModeToggle', () => {
-  let mockMatchMedia: ReturnType<typeof vi.fn>
+  let mockMatchMedia: jest.Mock
 
   beforeEach(() => {
     // Reset localStorage
@@ -15,21 +14,21 @@ describe('DarkModeToggle', () => {
     document.documentElement.className = ''
 
     // Setup matchMedia mock
-    mockMatchMedia = vi.fn().mockImplementation((query) => ({
+    mockMatchMedia = jest.fn().mockImplementation((query) => ({
       matches: false,
       media: query,
       onchange: null,
-      addListener: vi.fn(),
-      removeListener: vi.fn(),
-      addEventListener: vi.fn(),
-      removeEventListener: vi.fn(),
-      dispatchEvent: vi.fn(),
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
     }))
     window.matchMedia = mockMatchMedia
   })
 
   afterEach(() => {
-    vi.restoreAllMocks()
+    jest.restoreAllMocks()
   })
 
   it('renders disabled button before mounting (testing hydration)', () => {
@@ -65,11 +64,11 @@ describe('DarkModeToggle', () => {
       matches: query === '(prefers-color-scheme: dark)',
       media: query,
       onchange: null,
-      addListener: vi.fn(),
-      removeListener: vi.fn(),
-      addEventListener: vi.fn(),
-      removeEventListener: vi.fn(),
-      dispatchEvent: vi.fn(),
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
     }))
 
     render(<DarkModeToggle />)
