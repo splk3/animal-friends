@@ -7,7 +7,7 @@ interface MobileDropdownProps {
   title: string
   links: DropdownLink[]
   isOpen: boolean
-  onToggle: (id: string) => void
+  onToggle: (_id: string) => void
   onLinkClick: () => void
 }
 
