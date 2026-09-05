@@ -2,6 +2,9 @@
 .cache/
 public/
 
+# Coverage
+coverage/
+
 # Node.js dependencies
 node_modules/
 

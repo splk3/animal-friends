@@ -55,6 +55,16 @@ describe("MobileDropdown", () => {
     expect(defaultProps.onToggle).toHaveBeenCalledTimes(1)
   })
 
+  it("does not call onToggle when other keys are pressed", () => {
+    render(<MobileDropdown {...defaultProps} />)
+
+    const button = screen.getByRole("button", { name: /Test Menu/i })
+    button.focus()
+    fireEvent.keyDown(button, { key: "Tab", code: "Tab" })
+
+    expect(defaultProps.onToggle).not.toHaveBeenCalled()
+  })
+
   it("does not render links when isOpen is false", () => {
     render(<MobileDropdown {...defaultProps} />)
 
