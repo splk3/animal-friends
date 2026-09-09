@@ -14,7 +14,8 @@ describe("DesktopDropdown", () => {
 
   it("renders correctly with menu closed", () => {
     render(<DesktopDropdown {...defaultProps} />)
-    expect(screen.getByRole("button")).toHaveTextContent("Test Menu ▾")
+    const button = screen.getByRole("button", { name: /test menu/i })
+    expect(button).toHaveAttribute("aria-expanded", "false")
     expect(screen.queryByRole("menu")).not.toBeInTheDocument()
   })
 
@@ -33,21 +34,28 @@ describe("DesktopDropdown", () => {
 
   it("handles keyboard navigation", () => {
     render(<DesktopDropdown {...defaultProps} />)
-    const button = screen.getByRole("button")
+    const button = screen.getByRole("button", { name: /test menu/i })
+    button.focus()
+    expect(button).toHaveFocus()
 
-    fireEvent.keyDown(button, { key: "Enter" })
+    fireEvent.keyDown(button, { key: "Enter", code: "Enter" })
     expect(screen.getByRole("menu")).toBeInTheDocument()
 
-    fireEvent.keyDown(button, { key: "Escape" })
+    fireEvent.keyDown(button, { key: "Escape", code: "Escape" })
     expect(screen.queryByRole("menu")).not.toBeInTheDocument()
 
-    fireEvent.keyDown(button, { key: " " })
+    fireEvent.keyDown(button, { key: " ", code: "Space" })
     expect(screen.getByRole("menu")).toBeInTheDocument()
   })
 
   it("shows the menu on hover", () => {
     render(<DesktopDropdown {...defaultProps} />)
-    const dropdownContainer = screen.getByRole("button").parentElement as HTMLElement
+    const button = screen.getByRole("button", { name: /test menu/i })
+    const dropdownContainer = button.parentElement
+    expect(dropdownContainer).not.toBeNull()
+    if (!dropdownContainer) {
+      throw new Error("Dropdown container not found")
+    }
 
     fireEvent.mouseEnter(dropdownContainer)
     expect(screen.getByRole("menu")).toBeInTheDocument()
