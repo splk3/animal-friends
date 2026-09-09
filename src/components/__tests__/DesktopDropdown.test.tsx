@@ -63,35 +63,41 @@ describe('DesktopDropdown', () => {
   })
 
   it('handles keyboard navigation - Enter key', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
-    fireEvent.keyDown(button, { key: 'Enter' })
+    button.focus()
+    await user.keyboard('{Enter}')
     expect(screen.getByRole('menu')).toBeInTheDocument()
 
-    fireEvent.keyDown(button, { key: 'Enter' })
+    await user.keyboard('{Enter}')
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
   it('handles keyboard navigation - Space key', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
-    fireEvent.keyDown(button, { key: ' ' })
+    button.focus()
+    await user.keyboard(' ')
     expect(screen.getByRole('menu')).toBeInTheDocument()
 
-    fireEvent.keyDown(button, { key: ' ' })
+    await user.keyboard(' ')
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
   it('handles keyboard navigation - Escape key', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
-    fireEvent.keyDown(button, { key: 'Enter' })
+    button.focus()
+    await user.keyboard('{Enter}')
     expect(screen.getByRole('menu')).toBeInTheDocument()
 
-    fireEvent.keyDown(button, { key: 'Escape' })
+    await user.keyboard('{Escape}')
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
