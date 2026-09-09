@@ -69,9 +69,9 @@ describe("DesktopDropdown", () => {
   it("applies the alignment class correctly", () => {
     const { rerender } = render(<DesktopDropdown {...defaultProps} align="left" />)
     fireEvent.click(screen.getByRole("button"))
-    expect(screen.getByRole("menu").className).not.toContain("right-0")
+    expect(screen.getByRole("menu")).not.toHaveClass("right-0")
 
     rerender(<DesktopDropdown {...defaultProps} align="right" />)
-    expect(screen.getByRole("menu").className).toContain("right-0")
+    expect(screen.getByRole("menu")).toHaveClass("right-0")
   })
 })
