@@ -94,6 +94,7 @@ describe('DesktopDropdown', () => {
   })
 
   it('sets accessibility attributes correctly', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
@@ -101,7 +102,7 @@ describe('DesktopDropdown', () => {
     expect(button).toHaveAttribute('aria-haspopup', 'true')
     expect(button).toHaveAttribute('aria-controls', 'desktop-test-menu')
 
-    await userEvent.click(button)
+    await user.click(button)
     expect(button).toHaveAttribute('aria-expanded', 'true')
 
     const menu = screen.getByRole('menu')
