@@ -49,13 +49,14 @@ describe('DesktopDropdown', () => {
   })
 
   it('toggles links on button click', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
-    await userEvent.click(button)
+    await user.click(button)
     expect(screen.getByRole('menu')).toBeInTheDocument()
 
-    await userEvent.click(button)
+    await user.click(button)
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
