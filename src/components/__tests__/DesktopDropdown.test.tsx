@@ -46,8 +46,8 @@ describe("DesktopDropdown", () => {
   })
 
   it("shows the menu on hover", () => {
-    const { container } = render(<DesktopDropdown {...defaultProps} />)
-    const dropdownContainer = container.firstChild as HTMLElement
+    render(<DesktopDropdown {...defaultProps} />)
+    const dropdownContainer = screen.getByRole("button").parentElement as HTMLElement
 
     fireEvent.mouseEnter(dropdownContainer)
     expect(screen.getByRole("menu")).toBeInTheDocument()
