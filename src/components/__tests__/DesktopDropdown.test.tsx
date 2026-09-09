@@ -36,15 +36,17 @@ describe('DesktopDropdown', () => {
   })
 
   it('shows links on mouse enter and hides on mouse leave', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
-    const container = screen.getByText(/Dropdown Title/i).closest('div')!
+    const button = screen.getByRole('button', { name: /Dropdown Title/i })
+    const container = button.parentElement!
 
-    fireEvent.mouseEnter(container)
+    await user.hover(container)
     expect(screen.getByRole('menu')).toBeInTheDocument()
     expect(screen.getByText('Link 1')).toBeInTheDocument()
     expect(screen.getByText('Link 2')).toBeInTheDocument()
 
-    fireEvent.mouseLeave(container)
+    await user.unhover(container)
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
