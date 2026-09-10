@@ -20,7 +20,7 @@ A fun and colorful website about animals that make good pets, featuring real-wor
 
 ### Prerequisites
 
-- Node.js >=24 <25 (24 LTS)
+- Node.js 24 LTS (required, `>=24 <25`)
 - npm or yarn
 
 ### Installation
