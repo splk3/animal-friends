@@ -122,9 +122,10 @@ describe('DesktopDropdown', () => {
   })
 
   it('applies right alignment class when align="right"', async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} align="right" />)
     const button = screen.getByRole('button')
-    await userEvent.click(button)
+    await user.click(button)
 
     const menu = screen.getByRole('menu')
     expect(menu).toHaveClass('right-0')
