@@ -21,12 +21,6 @@ updates:
         dependency-type: "production"
         patterns:
           - "gatsby*"
-        update-types:
-          - "minor"
-          - "patch"
-      production-react:
-        dependency-type: "production"
-        patterns:
           - "react"
           - "react-dom"
         update-types:
