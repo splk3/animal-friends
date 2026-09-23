@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const DogsPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐕 Dogs - Man's Best Friend" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐕 Dogs - Man's Best Friend"
+      funFact="💡 Did you know? Dogs can understand up to 250 words and gestures, making them one of the most intelligent pets!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Dogs have been loyal companions to humans for thousands of years. Known for their 
               unwavering loyalty, playful nature, and diverse personalities, dogs make wonderful pets 
               for families, singles, and everyone in between.
@@ -85,17 +85,7 @@ const DogsPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Dogs can understand up to 250 words and gestures, making them one of 
-            the most intelligent pets!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

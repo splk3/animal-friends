@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowOtterPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🦦 Rainbow Otter - Playful Aquatic Colors" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🦦 Rainbow Otter - Playful Aquatic Colors"
+      funFact="🌈 Fun Fact: Rainbow Otters use rocks as tools and pass favorite rocks down through families! They create mini rainbows every time they shake water off their fur!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Otter combines the playful, adorable nature of otters with spectacular 
               rainbow-colored fur. These social aquatic mammals bring joy with their antics while 
               creating colorful splashes and leaving rainbow trails in the water!
@@ -89,17 +89,7 @@ const RainbowOtterPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Otters use rocks as tools and pass favorite rocks down through 
-            families! They create mini rainbows every time they shake water off their fur!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

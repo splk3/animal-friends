@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const PigPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐷 Pigs - Intelligent Farm Friends" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐷 Pigs - Intelligent Farm Friends"
+      funFact="💡 Did you know? Pigs are smarter than dogs and 3-year-old children, capable of playing video games and solving complex puzzles!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Pigs are highly intelligent, social animals that have become increasingly popular 
               as pets. Mini pigs especially make loving companions for those with adequate space 
               and commitment to their care needs.
@@ -85,17 +85,7 @@ const PigPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Pigs are smarter than dogs and 3-year-old children, capable of 
-            playing video games and solving complex puzzles!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

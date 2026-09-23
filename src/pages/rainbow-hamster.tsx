@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowHamsterPage: React.FC = () => {
   return (
-    <Layout pageTitle="🌈🐹 Rainbow Hamster - Tiny Colorful Cuteness" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🌈🐹 Rainbow Hamster - Tiny Colorful Cuteness"
+      funFact="🌈 Fun Fact: Rainbow Hamsters can fit incredible amounts of food in their cheeks - each cheek pouch extends to their hips! They glow slightly in moonlight!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Hamster is an adorable small pet with fur that displays all the colors 
               of the rainbow. These tiny companions are perfect for families, combining the 
               easy care of regular hamsters with spectacular rainbow coloring!
@@ -89,17 +89,7 @@ const RainbowHamsterPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Hamsters can fit incredible amounts of food in their cheeks - 
-            each cheek pouch extends to their hips! They glow slightly in moonlight!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

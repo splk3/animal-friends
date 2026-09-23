@@ -16,17 +16,67 @@ updates:
       - "dependencies"
       - "npm"
     groups:
-      # Group all production dependency updates together
-      production-dependencies:
+      # Group production dependency updates by family
+      production-framework:
+        dependency-type: "production"
+        patterns:
+          - "gatsby*"
+          - "react"
+          - "react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+      production-misc:
         dependency-type: "production"
         patterns:
           - "*"
         update-types:
           - "minor"
           - "patch"
-      # Group all development dependencies together
-      development-dependencies:
+      # Group development dependency updates by family
+      development-babel:
         dependency-type: "development"
+        patterns:
+          - "@babel/*"
+          - "babel-jest"
+        update-types:
+          - "minor"
+          - "patch"
+      development-styling:
+        dependency-type: "development"
+        patterns:
+          - "@tailwindcss/*"
+          - "autoprefixer"
+          - "gatsby-plugin-postcss"
+          - "postcss"
+          - "tailwindcss"
+        update-types:
+          - "minor"
+          - "patch"
+      development-testing:
+        dependency-type: "development"
+        patterns:
+          - "@testing-library/*"
+          - "@types/jest"
+          - "jest"
+          - "jest-environment-jsdom"
+        update-types:
+          - "minor"
+          - "patch"
+      development-types:
+        dependency-type: "development"
+        patterns:
+          - "@types/node"
+          - "@types/react"
+          - "@types/react-dom"
+          - "typescript"
+        update-types:
+          - "minor"
+          - "patch"
+      development-misc:
+        dependency-type: "development"
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -45,3 +95,24 @@ updates:
     labels:
       - "dependencies"
       - "github-actions"
+    groups:
+      actions-build-tooling:
+        patterns:
+          - "actions/checkout"
+          - "actions/setup-node"
+        update-types:
+          - "minor"
+          - "patch"
+      actions-pages:
+        patterns:
+          - "actions/deploy-pages"
+          - "actions/upload-pages-artifact"
+        update-types:
+          - "minor"
+          - "patch"
+      actions-misc:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

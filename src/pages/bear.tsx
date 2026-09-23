@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const BearPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐻 Bears - Powerful Wild Mammals" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐻 Bears - Powerful Wild Mammals"
+      funFact="💡 Did you know? Bears have an incredible sense of smell - up to 2,000 times better than humans! They can smell food from miles away."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Bears are powerful, intelligent wild animals that should never be kept as pets. 
               Learning about these magnificent creatures helps us understand the importance of 
               wildlife conservation and respecting nature's largest predators from a safe distance.
@@ -89,17 +89,7 @@ const BearPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Bears have an incredible sense of smell - up to 2,000 times better 
-            than humans! They can smell food from miles away.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

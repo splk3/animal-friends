@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const DuckPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦆 Ducks - Charming Water Birds" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦆 Ducks - Charming Water Birds"
+      funFact="💡 Did you know? Ducks are omnivores and excellent natural pest controllers, happily eating slugs, snails, and insects from your garden!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Ducks make delightful and entertaining pets with their playful personalities and 
               charming waddle. They're social, relatively low-maintenance, and provide fresh eggs 
               if you choose laying breeds.
@@ -85,17 +85,7 @@ const DuckPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Ducks are omnivores and excellent natural pest controllers, happily 
-            eating slugs, snails, and insects from your garden!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

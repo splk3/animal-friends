@@ -16,14 +16,14 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle, showBackButton = f
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const [openDropdown, setOpenDropdown] = React.useState<string | null>(null)
 
-  const toggleDropdown = (dropdown: string) => {
-    setOpenDropdown(openDropdown === dropdown ? null : dropdown)
-  }
+  const toggleDropdown = React.useCallback((dropdown: string) => {
+    setOpenDropdown((prev) => (prev === dropdown ? null : dropdown))
+  }, [])
 
-  const closeMobileMenu = () => {
+  const closeMobileMenu = React.useCallback(() => {
     setMobileMenuOpen(false)
     setOpenDropdown(null)
-  }
+  }, [])
 
   return (
     <div className="min-h-screen">
@@ -85,7 +85,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle, showBackButton = f
                   title={dropdown.title}
                   links={dropdown.links}
                   isOpen={openDropdown === dropdown.id}
-                  onToggle={() => toggleDropdown(dropdown.id)}
+                  onToggle={toggleDropdown}
                   onLinkClick={closeMobileMenu}
                 />
               ))}

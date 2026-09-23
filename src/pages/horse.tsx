@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const HorsePage: React.FC = () => {
   return (
-    <Layout pageTitle="🐴 Horses - Majestic Companions" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐴 Horses - Majestic Companions"
+      funFact="💡 Did you know? Horses can sleep both lying down and standing up, and they only need about 3 hours of sleep per day!"
+    >
+      <p className="text-lg text-gray-700 mb-6">
               Horses have been human companions for thousands of years, serving as working animals, 
               athletes, and beloved pets. These intelligent, social animals form deep bonds with 
               their owners and require dedicated care and attention.
@@ -89,17 +89,7 @@ const HorsePage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            💡 Did you know? Horses can sleep both lying down and standing up, and they only 
-            need about 3 hours of sleep per day!
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

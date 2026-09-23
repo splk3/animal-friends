@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const SunBugPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐞☀️ SunBug - Sparkly Solar Ladybug" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐞☀️ SunBug - Sparkly Solar Ladybug"
+      funFact="☀️ Fun Fact: SunBugs can produce tiny sparkle bursts when happy, creating miniature firework displays in your garden! Their glow is brightest when they find aphids to eat."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The SunBug is a magical ladybug variety that sparkles and shines like the sun itself. 
               These delightful insects bring both natural pest control and radiant sunshine to gardens, 
               creating a dazzling display wherever they go with their luminous, glittering appearance.
@@ -89,17 +89,7 @@ const SunBugPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            ☀️ Fun Fact: SunBugs can produce tiny sparkle bursts when happy, creating miniature 
-            firework displays in your garden! Their glow is brightest when they find aphids to eat.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

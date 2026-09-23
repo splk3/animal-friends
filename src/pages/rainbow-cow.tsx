@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowCowPage: React.FC = () => {
   return (
-    <Layout pageTitle="🐄🌈 Rainbow Cow - Colorful Gentle Giants" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🐄🌈 Rainbow Cow - Colorful Gentle Giants"
+      funFact="🌈 Fun Fact: Rainbow Cows' colors become more vivid when they're happy! They're known to have best friends just like regular cows and love showing off their colors in sunshine."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Cow is a magnificent bovine with a coat displaying beautiful rainbow colors. 
               These gentle giants combine the sweet, calm nature of regular cows with stunning prismatic 
               patterns, making them the most colorful addition to any farm or homestead.
@@ -89,17 +89,7 @@ const RainbowCowPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Cows' colors become more vivid when they're happy! They're known 
-            to have best friends just like regular cows and love showing off their colors in sunshine.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 

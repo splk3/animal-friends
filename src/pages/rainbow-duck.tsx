@@ -1,14 +1,14 @@
 import * as React from "react"
 import { type HeadFC } from "gatsby"
-import Layout from "../components/Layout"
+import PageTemplate from "../components/PageTemplate"
 
 const RainbowDuckPage: React.FC = () => {
   return (
-    <Layout pageTitle="🦆🌈 Rainbow Duck - Prismatic Waterfowl" showBackButton={true}>
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="prose max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
+    <PageTemplate
+      pageTitle="🦆🌈 Rainbow Duck - Prismatic Waterfowl"
+      funFact="🌈 Fun Fact: Rainbow Ducks create colorful ripples on water when they swim! Their feathers are water-resistant like regular ducks, making their rainbow colors permanent."
+    >
+      <p className="text-lg text-gray-700 mb-6">
               The Rainbow Duck is a delightful waterfowl with feathers displaying vibrant rainbow colors. 
               These charming ducks combine the playful nature and easy care of regular ducks with the 
               stunning visual appeal of rainbow plumage that shimmers beautifully on water.
@@ -89,17 +89,7 @@ const RainbowDuckPage: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg p-6 text-center">
-          <p className="text-purple-700 font-semibold">
-            🌈 Fun Fact: Rainbow Ducks create colorful ripples on water when they swim! Their 
-            feathers are water-resistant like regular ducks, making their rainbow colors permanent.
-          </p>
-        </div>
-      </div>
-    </Layout>
+    </PageTemplate>
   )
 }
 
