@@ -11,14 +11,14 @@ interface MobileDropdownProps {
   onLinkClick: () => void
 }
 
-const MobileDropdown = React.memo<MobileDropdownProps>(({
+const MobileDropdown = React.memo(({
   id,
   title,
   links,
   isOpen,
   onToggle,
   onLinkClick,
-}) => {
+}: MobileDropdownProps) => {
   const handleToggle = React.useCallback(() => {
     onToggle(id)
   }, [id, onToggle])
