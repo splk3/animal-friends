@@ -51,7 +51,7 @@ describe('DesktopDropdown', () => {
   })
 
   it('toggles links on button click', async () => {
-    const user = userEvent.setup()
+const user = userEvent.setup({ skipHover: true })
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
