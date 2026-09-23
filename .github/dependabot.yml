@@ -20,7 +20,7 @@ updates:
       production-framework:
         dependency-type: "production"
         patterns:
-          - "gatsby"
+          - "gatsby*"
         update-types:
           - "minor"
           - "patch"
@@ -29,6 +29,13 @@ updates:
         patterns:
           - "react"
           - "react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+      production-misc:
+        dependency-type: "production"
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -72,6 +79,13 @@ updates:
         update-types:
           - "minor"
           - "patch"
+      development-misc:
+        dependency-type: "development"
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
@@ -99,6 +113,12 @@ updates:
         patterns:
           - "actions/deploy-pages"
           - "actions/upload-pages-artifact"
+        update-types:
+          - "minor"
+          - "patch"
+      actions-misc:
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
