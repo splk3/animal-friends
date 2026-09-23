@@ -51,7 +51,7 @@ describe('DesktopDropdown', () => {
   })
 
   it('toggles links on button click', async () => {
-const user = userEvent.setup({ skipHover: true })
+    const user = userEvent.setup({ skipHover: true })
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
@@ -102,7 +102,7 @@ const user = userEvent.setup({ skipHover: true })
   })
 
   it('sets accessibility attributes correctly', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ skipHover: true })
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole('button')
 
@@ -122,7 +122,7 @@ const user = userEvent.setup({ skipHover: true })
   })
 
   it('applies right alignment class when align="right"', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ skipHover: true })
     render(<DesktopDropdown {...defaultProps} align="right" />)
     const button = screen.getByRole('button')
     await user.click(button)
