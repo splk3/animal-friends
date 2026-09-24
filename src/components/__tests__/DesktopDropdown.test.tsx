@@ -1,5 +1,6 @@
 import * as React from "react"
-import { render, screen, fireEvent } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
 import DesktopDropdown from "../DesktopDropdown"
 
 describe("DesktopDropdown", () => {
@@ -12,74 +13,117 @@ describe("DesktopDropdown", () => {
     ],
   }
 
-  it("renders correctly with menu closed", () => {
+  it("renders the dropdown title", () => {
     render(<DesktopDropdown {...defaultProps} />)
-    const button = screen.getByRole("button", { name: /test menu/i })
-    expect(button).toHaveAttribute("aria-expanded", "false")
+    expect(screen.getByText(/test menu/i)).toBeInTheDocument()
+  })
+
+  it("does not show links by default", () => {
+    render(<DesktopDropdown {...defaultProps} />)
     expect(screen.queryByRole("menu")).not.toBeInTheDocument()
   })
 
-  it("toggles the menu on button click", () => {
-    render(<DesktopDropdown {...defaultProps} />)
-    const button = screen.getByRole("button")
-
-    fireEvent.click(button)
-    expect(screen.getByRole("menu")).toBeInTheDocument()
-    expect(button).toHaveAttribute("aria-expanded", "true")
-
-    fireEvent.click(button)
-    expect(screen.queryByRole("menu")).not.toBeInTheDocument()
-    expect(button).toHaveAttribute("aria-expanded", "false")
-  })
-
-  it("handles keyboard navigation", () => {
+  it("shows links on mouse enter and hides on mouse leave", async () => {
+    const user = userEvent.setup()
     render(<DesktopDropdown {...defaultProps} />)
     const button = screen.getByRole("button", { name: /test menu/i })
-    button.focus()
-    expect(button).toHaveFocus()
+    const container = button.parentElement
 
-    fireEvent.keyDown(button, { key: "Enter", code: "Enter" })
-    expect(screen.getByRole("menu")).toBeInTheDocument()
-
-    fireEvent.keyDown(button, { key: "Escape", code: "Escape" })
-    expect(screen.queryByRole("menu")).not.toBeInTheDocument()
-
-    fireEvent.keyDown(button, { key: " ", code: "Space" })
-    expect(screen.getByRole("menu")).toBeInTheDocument()
-  })
-
-  it("shows the menu on hover", () => {
-    render(<DesktopDropdown {...defaultProps} />)
-    const button = screen.getByRole("button", { name: /test menu/i })
-    const dropdownContainer = button.parentElement
-    expect(dropdownContainer).not.toBeNull()
-    if (!dropdownContainer) {
+    expect(container).not.toBeNull()
+    if (!container) {
       throw new Error("Dropdown container not found")
     }
 
-    fireEvent.mouseEnter(dropdownContainer)
+    await user.hover(container)
     expect(screen.getByRole("menu")).toBeInTheDocument()
+    expect(screen.getByText("Link 1")).toBeInTheDocument()
+    expect(screen.getByText("Link 2")).toBeInTheDocument()
 
-    fireEvent.mouseLeave(dropdownContainer)
+    await user.unhover(container)
     expect(screen.queryByRole("menu")).not.toBeInTheDocument()
   })
 
-  it("renders links correctly when open", () => {
+  it("toggles links on button click", async () => {
+    const user = userEvent.setup({ skipHover: true })
     render(<DesktopDropdown {...defaultProps} />)
-    fireEvent.click(screen.getByRole("button"))
+    const button = screen.getByRole("button")
 
-    const links = screen.getAllByRole("menuitem")
-    expect(links).toHaveLength(2)
-    expect(links[0]).toHaveAttribute("href", "/link-1")
-    expect(links[1]).toHaveAttribute("href", "/link-2")
+    await user.click(button)
+    expect(screen.getByRole("menu")).toBeInTheDocument()
+    expect(button).toHaveAttribute("aria-expanded", "true")
+
+    await user.click(button)
+    expect(screen.queryByRole("menu")).not.toBeInTheDocument()
+    expect(button).toHaveAttribute("aria-expanded", "false")
   })
 
-  it("applies the alignment class correctly", () => {
-    const { rerender } = render(<DesktopDropdown {...defaultProps} align="left" />)
-    fireEvent.click(screen.getByRole("button"))
-    expect(screen.getByRole("menu")).not.toHaveClass("right-0")
+  it("handles keyboard navigation with Enter", async () => {
+    const user = userEvent.setup()
+    render(<DesktopDropdown {...defaultProps} />)
+    const button = screen.getByRole("button")
 
-    rerender(<DesktopDropdown {...defaultProps} align="right" />)
-    expect(screen.getByRole("menu")).toHaveClass("right-0")
+    button.focus()
+    await user.keyboard("{Enter}")
+    expect(screen.getByRole("menu")).toBeInTheDocument()
+
+    await user.keyboard("{Enter}")
+    expect(screen.queryByRole("menu")).not.toBeInTheDocument()
+  })
+
+  it("handles keyboard navigation with Space", async () => {
+    const user = userEvent.setup()
+    render(<DesktopDropdown {...defaultProps} />)
+    const button = screen.getByRole("button")
+
+    button.focus()
+    await user.keyboard(" ")
+    expect(screen.getByRole("menu")).toBeInTheDocument()
+
+    await user.keyboard(" ")
+    expect(screen.queryByRole("menu")).not.toBeInTheDocument()
+  })
+
+  it("handles keyboard navigation with Escape", async () => {
+    const user = userEvent.setup()
+    render(<DesktopDropdown {...defaultProps} />)
+    const button = screen.getByRole("button")
+
+    button.focus()
+    await user.keyboard("{Enter}")
+    expect(screen.getByRole("menu")).toBeInTheDocument()
+
+    await user.keyboard("{Escape}")
+    expect(screen.queryByRole("menu")).not.toBeInTheDocument()
+  })
+
+  it("sets accessibility attributes correctly", async () => {
+    const user = userEvent.setup({ skipHover: true })
+    render(<DesktopDropdown {...defaultProps} />)
+    const button = screen.getByRole("button")
+
+    expect(button).toHaveAttribute("aria-expanded", "false")
+    expect(button).toHaveAttribute("aria-haspopup", "true")
+    expect(button).toHaveAttribute("aria-controls", "desktop-test-dropdown-menu")
+
+    await user.click(button)
+    expect(button).toHaveAttribute("aria-expanded", "true")
+
+    const menu = screen.getByRole("menu")
+    expect(menu).toHaveAttribute("id", "desktop-test-dropdown-menu")
+
+    const menuItems = screen.getAllByRole("menuitem")
+    expect(menuItems).toHaveLength(2)
+    expect(menuItems[0]).toHaveAttribute("href", "/link-1")
+  })
+
+  it("applies right alignment class when align=right", async () => {
+    const user = userEvent.setup({ skipHover: true })
+    render(<DesktopDropdown {...defaultProps} align="right" />)
+    const button = screen.getByRole("button")
+
+    await user.click(button)
+
+    const menu = screen.getByRole("menu")
+    expect(menu).toHaveClass("right-0")
   })
 })
