@@ -69,12 +69,11 @@ describe("MobileDropdown", () => {
     expect(screen.getByText("Link 2")).toBeInTheDocument()
   })
 
-  it("calls onLinkClick when a link is clicked", async () => {
-    const user = userEvent.setup()
+  it("calls onLinkClick when a link is clicked", () => {
     render(<MobileDropdown {...defaultProps} isOpen={true} />)
 
     const link = screen.getByText("Link 1")
-    await user.click(link)
+    fireEvent.click(link)
 
     expect(defaultProps.onLinkClick).toHaveBeenCalledTimes(1)
   })
